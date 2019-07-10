@@ -23,41 +23,28 @@
 #ifndef __MAIN_H
 #define __MAIN_H
 
-#ifdef __cplusplus
-extern "C" {
-#endif
-
-/* Includes ------------------------------------------------------------------*/
 #include "stm32f4xx_hal.h"
+/* Includes ------------------------------------------------------------------*/
 
-/* Private includes ----------------------------------------------------------*/
+/* Configuration **************************************************************/
+#define DMA_BUF_SIZE        32      /* DMA circular buffer size in bytes */
+#define DMA_TIMEOUT_MS      10      /* DMA Timeout duration in msec */
+/******************************************************************************/
+
+/* Type definitions ----------------------------------------------------------*/
+typedef struct
+{
+    volatile unsigned char  flag;     /* Timeout event flag */
+    unsigned short timer;             /* Timeout duration in msec */
+    unsigned short prevCNDTR;         /* Holds previous value of DMA_CNDTR */
+} DMA_Event_t;
+
 /* USER CODE BEGIN Includes */
 
 /* USER CODE END Includes */
 
-/* Exported types ------------------------------------------------------------*/
-/* USER CODE BEGIN ET */
-
-/* USER CODE END ET */
-
-/* Exported constants --------------------------------------------------------*/
-/* USER CODE BEGIN EC */
-
-/* USER CODE END EC */
-
-/* Exported macro ------------------------------------------------------------*/
-/* USER CODE BEGIN EM */
-
-/* USER CODE END EM */
-
-/* Exported functions prototypes ---------------------------------------------*/
-void Error_Handler(void);
-
-/* USER CODE BEGIN EFP */
-
-/* USER CODE END EFP */
-
 /* Private defines -----------------------------------------------------------*/
+
 #define B1_Pin GPIO_PIN_13
 #define B1_GPIO_Port GPIOC
 #define USART_TX_Pin GPIO_PIN_2
@@ -72,9 +59,22 @@ void Error_Handler(void);
 #define TCK_GPIO_Port GPIOA
 #define SWO_Pin GPIO_PIN_3
 #define SWO_GPIO_Port GPIOB
+
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
+
+void Error_Handler(void);
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+int Uart1_GetChar(unsigned char *, int);
+int Uart3_GetChar(unsigned char *, int);
+int Uart4_GetChar(unsigned char *, int);
+int Uart5_GetChar(unsigned char *, int);
+int Uart6_GetChar(unsigned char *, int);
 
 #ifdef __cplusplus
 }
