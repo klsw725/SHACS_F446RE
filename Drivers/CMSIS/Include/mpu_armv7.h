@@ -243,7 +243,7 @@ __STATIC_INLINE void ARM_MPU_SetRegionEx(uint32_t rnr, uint32_t rbar, uint32_t r
 * \param src Source data is copied from.
 * \param len Amount of data words to be copied.
 */
-__STATIC_INLINE void orderedCpy(volatile uint32_t* dst, const uint32_t* restrict src, uint32_t len)
+__STATIC_INLINE void orderedCpy(volatile uint32_t* dst, const uint32_t* /*restrict*/ src, uint32_t len)
 {
   uint32_t i;
   for (i = 0U; i < len; ++i) 

@@ -18,6 +18,16 @@ C:\Users\klsw7\Documents\SHACS_F446RE\EWARM/../Drivers/CMSIS/Device/ST/STM32F4xx
 -I
 C:\Users\klsw7\Documents\SHACS_F446RE\EWARM/../Drivers/CMSIS/Include
 -I
+C:\Users\klsw7\Documents\SHACS_F446RE\EWARM\..\Middlewares\Third_Party\BTSerialApp
+-I
+C:\Users\klsw7\Documents\SHACS_F446RE\EWARM\..\Middlewares\Third_Party\USBSerialApp
+-I
+C:\Users\klsw7\Documents\SHACS_F446RE\EWARM\..\Middlewares\Third_Party\WifiSerialApp
+-I
+C:\Users\klsw7\Documents\SHACS_F446RE\EWARM\..\Middlewares\Third_Party\ZWHostApp
+-I
+C:\Users\klsw7\Documents\SHACS_F446RE\EWARM\..\Middlewares\Third_Party\ZWSerialAPI
+-I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.5\arm\inc
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.5\arm\inc\c
@@ -37,6 +47,16 @@ C:\Users\klsw7\Documents\SHACS_F446RE\Middlewares\Third_Party\FreeRTOS\Source\po
 C:\Users\klsw7\Documents\SHACS_F446RE\Drivers\CMSIS\Device\ST\STM32F4xx\Include
 -I
 C:\Users\klsw7\Documents\SHACS_F446RE\Drivers\CMSIS\Include
+-I
+C:\Users\klsw7\Documents\SHACS_F446RE\Middlewares\Third_Party\BTSerialApp
+-I
+C:\Users\klsw7\Documents\SHACS_F446RE\Middlewares\Third_Party\USBSerialApp
+-I
+C:\Users\klsw7\Documents\SHACS_F446RE\Middlewares\Third_Party\WifiSerialApp
+-I
+C:\Users\klsw7\Documents\SHACS_F446RE\Middlewares\Third_Party\ZWHostApp
+-I
+C:\Users\klsw7\Documents\SHACS_F446RE\Middlewares\Third_Party\ZWSerialAPI
 -DUSE_HAL_DRIVER=1
 -DSTM32F446xx=1
 -D__CHAR_BITS__=8

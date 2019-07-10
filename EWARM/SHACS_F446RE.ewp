@@ -323,6 +323,11 @@
           <state>$PROJ_DIR$/../Middlewares/Third_Party/FreeRTOS/Source/portable/IAR/ARM_CM4F</state>
           <state>$PROJ_DIR$/../Drivers/CMSIS/Device/ST/STM32F4xx/Include</state>
           <state>$PROJ_DIR$/../Drivers/CMSIS/Include</state>
+          <state>$PROJ_DIR$\..\Middlewares\Third_Party\BTSerialApp</state>
+          <state>$PROJ_DIR$\..\Middlewares\Third_Party\USBSerialApp</state>
+          <state>$PROJ_DIR$\..\Middlewares\Third_Party\WifiSerialApp</state>
+          <state>$PROJ_DIR$\..\Middlewares\Third_Party\ZWHostApp</state>
+          <state>$PROJ_DIR$\..\Middlewares\Third_Party\ZWSerialAPI</state>
         </option>
         <option>
           <name>CCStdIncCheck</name>
@@ -1059,6 +1064,15 @@
   <group>
     <name>Middlewares</name>
     <group>
+      <name>BTSerialApp</name>
+      <file>
+        <name>$PROJ_DIR$\..\Middlewares\Third_Party\BTSerialApp\BtSerial.h</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Middlewares\Third_Party\BTSerialApp\BtSerialAPI.c</name>
+      </file>
+    </group>
+    <group>
       <name>FreeRTOS</name>
       <file>
         <name>$PROJ_DIR$\..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS\cmsis_os.c</name>
@@ -1092,6 +1106,66 @@
       </file>
       <file>
         <name>$PROJ_DIR$\..\Middlewares\Third_Party\FreeRTOS\Source\timers.c</name>
+      </file>
+    </group>
+    <group>
+      <name>USBSerialApp</name>
+      <file>
+        <name>$PROJ_DIR$\..\Middlewares\Third_Party\USBSerialApp\UsbSerial.h</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Middlewares\Third_Party\USBSerialApp\UsbSerialAPI.c</name>
+      </file>
+    </group>
+    <group>
+      <name>WifiSerialApp</name>
+      <file>
+        <name>$PROJ_DIR$\..\Middlewares\Third_Party\WifiSerialApp\WifiSerial.h</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Middlewares\Third_Party\WifiSerialApp\WifiSerialAPI.c</name>
+      </file>
+    </group>
+    <group>
+      <name>ZWHostApp</name>
+      <file>
+        <name>$PROJ_DIR$\..\Middlewares\Third_Party\ZWHostApp\networkManagement.cpp</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Middlewares\Third_Party\ZWHostApp\networkManagement.h</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Middlewares\Third_Party\ZWHostApp\timing.cpp</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Middlewares\Third_Party\ZWHostApp\timing.h</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Middlewares\Third_Party\ZWHostApp\ZWhostApp.cpp</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Middlewares\Third_Party\ZWHostApp\ZWhostApp.h</name>
+      </file>
+    </group>
+    <group>
+      <name>ZWSerialAPI</name>
+      <file>
+        <name>$PROJ_DIR$\..\Middlewares\Third_Party\ZWSerialAPI\ZW_classcmd.h</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Middlewares\Third_Party\ZWSerialAPI\ZW_SerialAPI.h</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Middlewares\Third_Party\ZWSerialAPI\ZwSerial.cpp</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Middlewares\Third_Party\ZWSerialAPI\ZwSerial.h</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Middlewares\Third_Party\ZWSerialAPI\ZwSerialAPI.cpp</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$\..\Middlewares\Third_Party\ZWSerialAPI\ZwSerialAPI.h</name>
       </file>
     </group>
   </group>

@@ -310,29 +310,29 @@ int main(void)
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
-//  osThreadDef(Task1, DispatchProcTask, osPriorityAboveNormal, 0, 1024);
-//  Task1Handle = osThreadCreate(osThread(Task1), NULL);
-//
+    osThreadDef(Task1, DispatchProcTask, osPriorityAboveNormal, 0, 1024);
+    Task1Handle = osThreadCreate(osThread(Task1), NULL);
+
     osThreadDef(Task2, LedTask1, osPriorityLow, 0, 128);
     Task2Handle = osThreadCreate(osThread(Task2), NULL);
-//
-//  osThreadDef(Task3, APIProcTask, osPriorityHigh, 0, 1024);
-//  Task3Handle = osThreadCreate(osThread(Task3), NULL);
-//
-//
-//  osThreadDef(Task5, BtSerialApp, osPriorityBelowNormal, 0, 512);
-//  Task5Handle = osThreadCreate(osThread(Task5), NULL);
-//
-//  osThreadDef(Task6, UsbSerialApp, osPriorityBelowNormal, 0, 512);
-//  Task6Handle = osThreadCreate(osThread(Task6), NULL);
-//
-//#ifdef	WIFI_ON
-//  osThreadDef(Task8, WifiSerialApp, osPriorityBelowNormal, 0, 512);
-//  Task7Handle = osThreadCreate(osThread(Task8), NULL);
-//#endif
-//
-//  osThreadDef(Task7, ZWApp_main, osPriorityNormal, 0, 1024);
-//  Task7Handle = osThreadCreate(osThread(Task7), NULL);
+
+    osThreadDef(Task3, APIProcTask, osPriorityHigh, 0, 1024);
+    Task3Handle = osThreadCreate(osThread(Task3), NULL);
+
+
+    osThreadDef(Task5, BtSerialApp, osPriorityBelowNormal, 0, 512);
+    Task5Handle = osThreadCreate(osThread(Task5), NULL);
+
+    osThreadDef(Task6, UsbSerialApp, osPriorityBelowNormal, 0, 512);
+    Task6Handle = osThreadCreate(osThread(Task6), NULL);
+
+  #ifdef	WIFI_ON
+    osThreadDef(Task8, WifiSerialApp, osPriorityBelowNormal, 0, 512);
+    Task7Handle = osThreadCreate(osThread(Task8), NULL);
+  #endif
+
+    osThreadDef(Task7, ZWApp_main, osPriorityNormal, 0, 1024);
+    Task7Handle = osThreadCreate(osThread(Task7), NULL);
 
   /* USER CODE END RTOS_THREADS */
 
