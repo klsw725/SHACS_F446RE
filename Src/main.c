@@ -326,10 +326,10 @@ int main(void)
     osThreadDef(Task6, UsbSerialApp, osPriorityBelowNormal, 0, 512);
     Task6Handle = osThreadCreate(osThread(Task6), NULL);
 
-  #ifdef	WIFI_ON
+ #ifdef	WIFI_ON
     osThreadDef(Task8, WifiSerialApp, osPriorityBelowNormal, 0, 512);
-    Task7Handle = osThreadCreate(osThread(Task8), NULL);
-  #endif
+    Task8Handle = osThreadCreate(osThread(Task8), NULL);
+ #endif
 
     osThreadDef(Task7, ZWApp_main, osPriorityNormal, 0, 1024);
     Task7Handle = osThreadCreate(osThread(Task7), NULL);
