@@ -14,7 +14,7 @@ LeaveTargetRunning=_ 0
 stlinkserialNo=67133741
 stlinkfoundProbes=
 [DebugChecksum]
-Checksum=-2105524280
+Checksum=-1882979647
 [Exceptions]
 StopOnUncaught=_ 0
 StopOnThrow=_ 0
@@ -101,8 +101,12 @@ ShowTiming=1
 [Disassemble mode]
 mode=0
 [Breakpoints2]
-Bp0=_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\Middlewares\Third_Party\ZWHostApp\ZWhostApp.cpp}.2206.5" 0 0 1 "" 0 "" 0
-Count=1
+Bp0=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\Middlewares\Third_Party\ZWHostApp\ZWhostApp.cpp}.2206.5" 0 0 1 "" 0 "" 0
+Bp1=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\Middlewares\Third_Party\BTSerialApp\BtSerialAPI.c}.125.5" 0 0 1 "" 0 "" 0
+Bp2=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\Middlewares\Third_Party\USBSerialApp\UsbSerialAPI.c}.119.5" 0 0 1 "" 0 "" 0
+Count=3
 [Aliases]
-Count=0
-SuppressDialog=0
+A0=_ "C:\Users\klsw7\Documents\SHACS_F446RE\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c" "C:\Users\seungwoo\Documents\SHACS_F446RE\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c"
+A1=_ "C:\Users\klsw7\Documents\SHACS_F446RE\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c" "C:\Users\seungwoo\Documents\SHACS_F446RE\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c"
+Count=2
+SuppressDialog=1

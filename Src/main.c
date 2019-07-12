@@ -319,7 +319,6 @@ int main(void)
     osThreadDef(Task3, APIProcTask, osPriorityHigh, 0, 1024);
     Task3Handle = osThreadCreate(osThread(Task3), NULL);
 
-
     osThreadDef(Task5, BtSerialApp, osPriorityBelowNormal, 0, 512);
     Task5Handle = osThreadCreate(osThread(Task5), NULL);
 
@@ -328,7 +327,7 @@ int main(void)
 
   #ifdef	WIFI_ON
     osThreadDef(Task8, WifiSerialApp, osPriorityBelowNormal, 0, 512);
-    Task7Handle = osThreadCreate(osThread(Task8), NULL);
+    Task8Handle = osThreadCreate(osThread(Task8), NULL);
   #endif
 
     osThreadDef(Task7, ZWApp_main, osPriorityNormal, 0, 1024);
