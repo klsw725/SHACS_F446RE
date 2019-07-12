@@ -1,10 +1,14 @@
 ###############################################################################
 #
 <<<<<<< HEAD
+<<<<<<< HEAD
 # IAR ELF Linker V7.80.1.11864/W32 for ARM                13/Jul/2019  01:06:44
 =======
 # IAR ELF Linker V7.80.1.11864/W32 for ARM                12/Jul/2019  17:43:26
 >>>>>>> 69bc07883636b953d616c007f6914e7f4f5c6363
+=======
+# IAR ELF Linker V7.80.1.11864/W32 for ARM                12/Jul/2019  23:25:05
+>>>>>>> 5e2aab4a3d0a35c39b88b70fe95c7c2483561696
 # Copyright 2007-2016 IAR Systems AB.
 #
 #    Output file  =  
@@ -295,6 +299,7 @@ initialize by copy { rw };
                              - 0x200011f8   0xc00
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 "P2", part 3 of 3:                         0x9334
   .bss                zero     0x200011f8  0x5c18  heap_4.o [1]
   .bss                zero     0x20006e10  0x1870  ZWhostApp.o [1]
@@ -419,6 +424,69 @@ initialize by copy { rw };
   .bss                zero     0x20008528     0x4  xgetmemchunk.o [3]
                              - 0x2000852c  0x7334
 >>>>>>> 69bc07883636b953d616c007f6914e7f4f5c6363
+=======
+"P2", part 3 of 3:                         0x8b18
+  .bss                zero     0x200011f8  0x53fc  heap_4.o [1]
+  .bss                zero     0x200065f4    0x64  BtSerialAPI.o [1]
+  .bss                zero     0x20006658  0x1870  ZWhostApp.o [1]
+  .bss                zero     0x20007ec8   0x72c  ZwSerialAPI.o [1]
+  .bss                zero     0x200085f4   0x1d8  dlmalloc.o [3]
+  .bss                zero     0x200087cc   0x105  ZWhostApp.o [1]
+  .bss                zero     0x200088d1     0x1  BtSerialAPI.o [1]
+  .bss                zero     0x200088d2     0x1  BtSerialAPI.o [1]
+  .bss                zero     0x200088d3     0x1  UsbSerialAPI.o [1]
+  .bss                zero     0x200088d4   0x100  ZwSerialAPI.o [1]
+  .bss                zero     0x200089d4    0xe8  ZWhostApp.o [1]
+  .bss                zero     0x20008abc    0xe8  ZWhostApp.o [1]
+  .bss                zero     0x20008ba4    0xa0  tasks.o [1]
+  .bss                zero     0x20008c44    0xa0  ZwSerialAPI.o [1]
+  .bss                zero     0x20008ce4    0x8c  tasks.o [1]
+  .bss                zero     0x20008d70    0x84  ZwSerialAPI.o [1]
+  .bss                zero     0x20008df4    0x81  ZwSerialAPI.o [1]
+  .bss                zero     0x20008e75     0x1  UsbSerialAPI.o [1]
+  .bss                zero     0x20008e76     0x1  ZWhostApp.o [1]
+  .bss                zero     0x20008e77     0x1  ZwSerialAPI.o [1]
+  .bss                zero     0x20008e78    0x80  main.o [1]
+  .bss                zero     0x20008ef8    0x80  ZwSerialAPI.o [1]
+  .bss                zero     0x20008f78    0x80  ZwSerialAPI.o [1]
+  .bss                zero     0x20008ff8    0x80  ZwSerialAPI.o [1]
+  .bss                zero     0x20009078    0x80  ZwSerialAPI.o [1]
+  .bss                zero     0x200090f8    0x80  ZwSerialAPI.o [1]
+  .bss                zero     0x20009178    0x80  ZwSerialAPI.o [1]
+  .bss                zero     0x200091f8    0x80  ZwSerialAPI.o [1]
+  .bss                zero     0x20009278    0x80  ZwSerialAPI.o [1]
+  .bss                zero     0x200092f8    0x80  ZwSerialAPI.o [1]
+  .bss                zero     0x20009378    0x80  ZwSerialAPI.o [1]
+  .bss                zero     0x200093f8    0x80  ZwSerialAPI.o [1]
+  .bss                zero     0x20009478    0x80  ZwSerialAPI.o [1]
+  .bss                zero     0x200094f8    0x80  ZwSerialAPI.o [1]
+  .bss                zero     0x20009578    0x80  ZwSerialAPI.o [1]
+  .bss                zero     0x200095f8    0x80  ZwSerialAPI.o [1]
+  .bss                zero     0x20009678    0x80  ZwSerialAPI.o [1]
+  .bss                zero     0x200096f8    0x80  ZwSerialAPI.o [1]
+  .bss                zero     0x20009778    0x80  ZwSerialAPI.o [1]
+  .bss                zero     0x200097f8    0x80  ZwSerialAPI.o [1]
+  .bss                zero     0x20009878    0x64  BtSerialAPI.o [1]
+  .bss                zero     0x200098dc    0x64  UsbSerialAPI.o [1]
+  .bss                zero     0x20009940    0x64  UsbSerialAPI.o [1]
+  .bss                zero     0x200099a4    0x60  main.o [1]
+  .bss                zero     0x20009a04    0x60  main.o [1]
+  .bss                zero     0x20009a64    0x60  main.o [1]
+  .bss                zero     0x20009ac4    0x60  main.o [1]
+  .bss                zero     0x20009b24    0x50  xfiles.o [3]
+  .bss                zero     0x20009b74    0x40  main.o [1]
+  .bss                zero     0x20009bb4    0x40  main.o [1]
+  .bss                zero     0x20009bf4    0x40  stm32f4xx_hal_timebase_tim.o [1]
+  .bss                zero     0x20009c34    0x40  ZWhostApp.o [1]
+  .bss                zero     0x20009c74    0x20  main.o [1]
+  .bss                zero     0x20009c94    0x20  main.o [1]
+  .bss                zero     0x20009cb4    0x20  ZWhostApp.o [1]
+  .bss                zero     0x20009cd4    0x1c  ZwSerialAPI.o [1]
+  .bss                zero     0x20009cf0    0x18  dlmalloc.o [3]
+  .bss                zero     0x20009d08     0x4  new.o [4]
+  .bss                zero     0x20009d0c     0x4  xgetmemchunk.o [3]
+                             - 0x20009d10  0x8b18
+>>>>>>> 5e2aab4a3d0a35c39b88b70fe95c7c2483561696
 
 
 *******************************************************************************
@@ -429,12 +497,17 @@ initialize by copy { rw };
           -------     ----
 Zero (__iar_zero_init3)
 <<<<<<< HEAD
+<<<<<<< HEAD
     1 destination range, total size 0x9334:
           0x200011f8  0x9334
 =======
     1 destination range, total size 0x7334:
           0x200011f8  0x7334
 >>>>>>> 69bc07883636b953d616c007f6914e7f4f5c6363
+=======
+    1 destination range, total size 0x8b18:
+          0x200011f8  0x8b18
+>>>>>>> 5e2aab4a3d0a35c39b88b70fe95c7c2483561696
 
 Copy/packbits (__iar_packbits_init_single3)
     1 source range, total size 0x58 (5% of destination):
@@ -464,7 +537,11 @@ C:\Users\seungwoo\Documents\SHACS_F446RE\EWARM\SHACS_F446RE\Obj: [1]
     ZwSerial.o                         36
     ZwSerialAPI.o                   4 644       16    4 974
     cmsis_os.o                        340
+<<<<<<< HEAD
     heap_4.o                          424            23 576
+=======
+    heap_4.o                          424            21 500
+>>>>>>> 5e2aab4a3d0a35c39b88b70fe95c7c2483561696
     list.o                            144
     main.o                          1 928       60      788
     networkManagement.o             1 296        5       80
@@ -490,10 +567,14 @@ C:\Users\seungwoo\Documents\SHACS_F446RE\EWARM\SHACS_F446RE\Obj: [1]
     timing.o                           18
     -------------------------------------------------------
 <<<<<<< HEAD
+<<<<<<< HEAD
     Total:                         39 016      161   38 440
 =======
     Total:                         39 016      161   30 248
 >>>>>>> 69bc07883636b953d616c007f6914e7f4f5c6363
+=======
+    Total:                         39 016      161   36 364
+>>>>>>> 5e2aab4a3d0a35c39b88b70fe95c7c2483561696
 
 command line: [2]
     -------------------------------------------------------
@@ -569,10 +650,14 @@ shb_l.a: [7]
     Linker created                              36    3 072
 -----------------------------------------------------------
 <<<<<<< HEAD
+<<<<<<< HEAD
     Grand Total:                   47 577      211   42 280
 =======
     Grand Total:                   47 577      211   34 088
 >>>>>>> 69bc07883636b953d616c007f6914e7f4f5c6363
+=======
+    Grand Total:                   47 577      211   40 204
+>>>>>>> 5e2aab4a3d0a35c39b88b70fe95c7c2483561696
 
 
 *******************************************************************************
@@ -592,6 +677,7 @@ ApplicationCommandHandler(unsigned char, unsigned char, unsigned char *, unsigne
 ApplicationCommandHandler_Bridge(unsigned char, unsigned char, unsigned char, unsigned char *, unsigned char *, unsigned char)
                         0x0800090d   0x19c  Code  Gb  ZWhostApp.o [1]
 <<<<<<< HEAD
+<<<<<<< HEAD
 BtCommandQueue          0x2000a030    0x64  Data  Gb  BtSerialAPI.o [1]
 BtCommandQueueHandle    0x20009698     0x4  Data  Gb  main.o [1]
 BtQueueIndex            0x20009089     0x1  Data  Lc  BtSerialAPI.o [1]
@@ -606,6 +692,14 @@ BtResponseQueue         0x20008094    0x64  Data  Gb  BtSerialAPI.o [1]
 BtResponseQueueHandle   0x200076a4     0x4  Data  Gb  main.o [1]
 BtResponseQueueIndex    0x2000708a     0x1  Data  Lc  BtSerialAPI.o [1]
 >>>>>>> 69bc07883636b953d616c007f6914e7f4f5c6363
+=======
+BtCommandQueue          0x200065f4    0x64  Data  Gb  BtSerialAPI.o [1]
+BtCommandQueueHandle    0x20008ee0     0x4  Data  Gb  main.o [1]
+BtQueueIndex            0x200088d1     0x1  Data  Lc  BtSerialAPI.o [1]
+BtResponseQueue         0x20009878    0x64  Data  Gb  BtSerialAPI.o [1]
+BtResponseQueueHandle   0x20008eec     0x4  Data  Gb  main.o [1]
+BtResponseQueueIndex    0x200088d2     0x1  Data  Lc  BtSerialAPI.o [1]
+>>>>>>> 5e2aab4a3d0a35c39b88b70fe95c7c2483561696
 BtSerialApp             0x080058a1   0x13a  Code  Gb  BtSerialAPI.o [1]
 BusFault_Handler        0x0800b82b     0x2  Code  Gb  stm32f4xx_it.o [1]
 CB_GetVersionTestComplete(unsigned char, unsigned short)
@@ -634,10 +728,14 @@ CSerialAPI::MemoryGetID(unsigned char *, unsigned char *)
                         0x080052a5    0x42  Code  Gb  ZwSerialAPI.o [1]
 CSerialAPI::MemoryGetID(unsigned char *, unsigned char *)::buffer
 <<<<<<< HEAD
+<<<<<<< HEAD
                         0x200097b0    0x80  Data  Lc  ZwSerialAPI.o [1]
 =======
                         0x200077b0    0x80  Data  Lc  ZwSerialAPI.o [1]
 >>>>>>> 69bc07883636b953d616c007f6914e7f4f5c6363
+=======
+                        0x20008ff8    0x80  Data  Lc  ZwSerialAPI.o [1]
+>>>>>>> 5e2aab4a3d0a35c39b88b70fe95c7c2483561696
 CSerialAPI::ReceiveData(unsigned char *, unsigned char *, int *)
                         0x08004679   0x146  Code  Gb  ZwSerialAPI.o [1]
 CSerialAPI::SendData(unsigned char *, unsigned char, unsigned char *)
@@ -649,6 +747,7 @@ CSerialAPI::SendDataAndWaitForResponse(unsigned char *, unsigned char, unsigned 
 CSerialAPI::SerialAPI_GetInitData(unsigned char *, unsigned char *, unsigned char *, unsigned char *)
                         0x0800571d    0x58  Code  Gb  ZwSerialAPI.o [1]
 CSerialAPI::SerialAPI_GetInitData(unsigned char *, unsigned char *, unsigned char *, unsigned char *)::buffer
+<<<<<<< HEAD
 <<<<<<< HEAD
                         0x20009fb0    0x80  Data  Lc  ZwSerialAPI.o [1]
 CSerialAPI::SerialAPI_Get_Capabilities(unsigned char *)
@@ -662,10 +761,18 @@ CSerialAPI::SerialAPI_Get_Capabilities(unsigned char *)
 CSerialAPI::SerialAPI_Get_Capabilities(unsigned char *)::buffer
                         0x20007830    0x80  Data  Lc  ZwSerialAPI.o [1]
 >>>>>>> 69bc07883636b953d616c007f6914e7f4f5c6363
+=======
+                        0x200097f8    0x80  Data  Lc  ZwSerialAPI.o [1]
+CSerialAPI::SerialAPI_Get_Capabilities(unsigned char *)
+                        0x0800534d    0x3e  Code  Gb  ZwSerialAPI.o [1]
+CSerialAPI::SerialAPI_Get_Capabilities(unsigned char *)::buffer
+                        0x20009078    0x80  Data  Lc  ZwSerialAPI.o [1]
+>>>>>>> 5e2aab4a3d0a35c39b88b70fe95c7c2483561696
 CSerialAPI::Shutdown()  0x080051b5     0x2  Code  Gb  ZwSerialAPI.o [1]
 CSerialAPI::TransmitData(unsigned char *, unsigned char)
                         0x0800491b    0x4c  Code  Gb  ZwSerialAPI.o [1]
 CSerialAPI::TransmitData(unsigned char *, unsigned char)::wBuf
+<<<<<<< HEAD
 <<<<<<< HEAD
                         0x200095a8     0x4  Data  Lc  ZwSerialAPI.o [1]
 CSerialAPI::TransmitData(unsigned char *, unsigned char)::wLen
@@ -675,6 +782,11 @@ CSerialAPI::TransmitData(unsigned char *, unsigned char)::wLen
 CSerialAPI::TransmitData(unsigned char *, unsigned char)::wLen
                         0x2000752a     0x1  Data  Lc  ZwSerialAPI.o [1]
 >>>>>>> 69bc07883636b953d616c007f6914e7f4f5c6363
+=======
+                        0x20008df0     0x4  Data  Lc  ZwSerialAPI.o [1]
+CSerialAPI::TransmitData(unsigned char *, unsigned char)::wLen
+                        0x20008d72     0x1  Data  Lc  ZwSerialAPI.o [1]
+>>>>>>> 5e2aab4a3d0a35c39b88b70fe95c7c2483561696
 CSerialAPI::WaitForAck(unsigned char *)
                         0x08004a01    0x34  Code  Gb  ZwSerialAPI.o [1]
 CSerialAPI::WaitForResponse(unsigned char, unsigned char *, unsigned char *)
@@ -682,6 +794,7 @@ CSerialAPI::WaitForResponse(unsigned char, unsigned char *, unsigned char *)
 CSerialAPI::ZW_AddNodeToNetwork(unsigned char, void (*)(unsigned char, unsigned char, unsigned char *, unsigned char))
                         0x08005565    0x1a  Code  Gb  ZwSerialAPI.o [1]
 CSerialAPI::ZW_AddNodeToNetwork(unsigned char, void (*)(unsigned char, unsigned char, unsigned char *, unsigned char))::buffer
+<<<<<<< HEAD
 <<<<<<< HEAD
                         0x20009c30    0x80  Data  Lc  ZwSerialAPI.o [1]
 CSerialAPI::ZW_GetControllerCapabilities(unsigned char *)
@@ -698,24 +811,32 @@ CSerialAPI::ZW_GetNodeProtocolInfo(unsigned char, NODEINFO *)::buffer
                         0x20009a30    0x80  Data  Lc  ZwSerialAPI.o [1]
 =======
                         0x20007c30    0x80  Data  Lc  ZwSerialAPI.o [1]
+=======
+                        0x20009478    0x80  Data  Lc  ZwSerialAPI.o [1]
+>>>>>>> 5e2aab4a3d0a35c39b88b70fe95c7c2483561696
 CSerialAPI::ZW_GetControllerCapabilities(unsigned char *)
                         0x080056d7    0x26  Code  Gb  ZwSerialAPI.o [1]
 CSerialAPI::ZW_GetControllerCapabilities(unsigned char *)::buffer
-                        0x20007f30    0x80  Data  Lc  ZwSerialAPI.o [1]
+                        0x20009778    0x80  Data  Lc  ZwSerialAPI.o [1]
 CSerialAPI::ZW_GetLastWorkingRoute(unsigned char, unsigned char *)
                         0x080052ed    0x48  Code  Gb  ZwSerialAPI.o [1]
 CSerialAPI::ZW_GetLastWorkingRoute(unsigned char, unsigned char *)::buffer
-                        0x200075ac    0x80  Data  Lc  ZwSerialAPI.o [1]
+                        0x20008df4    0x80  Data  Lc  ZwSerialAPI.o [1]
 CSerialAPI::ZW_GetLastWorkingRoute(unsigned char, unsigned char *)::byLen
-                        0x2000762c     0x1  Data  Lc  ZwSerialAPI.o [1]
+                        0x20008e74     0x1  Data  Lc  ZwSerialAPI.o [1]
 CSerialAPI::ZW_GetNodeProtocolInfo(unsigned char, NODEINFO *)::buffer
+<<<<<<< HEAD
                         0x20007a30    0x80  Data  Lc  ZwSerialAPI.o [1]
 >>>>>>> 69bc07883636b953d616c007f6914e7f4f5c6363
+=======
+                        0x20009278    0x80  Data  Lc  ZwSerialAPI.o [1]
+>>>>>>> 5e2aab4a3d0a35c39b88b70fe95c7c2483561696
 CSerialAPI::ZW_GetNodeProtocolInfo(unsigned char, _NODEINFO_ *)
                         0x08005471    0x34  Code  Gb  ZwSerialAPI.o [1]
 CSerialAPI::ZW_GetSUCNodeID()
                         0x080055fd    0x22  Code  Gb  ZwSerialAPI.o [1]
 CSerialAPI::ZW_GetSUCNodeID()::buffer
+<<<<<<< HEAD
 <<<<<<< HEAD
                         0x20009db0    0x80  Data  Lc  ZwSerialAPI.o [1]
 CSerialAPI::ZW_RemoveFailedNode(unsigned char, void (*)(unsigned char))
@@ -756,48 +877,56 @@ CSerialAPI::ZW_SetDefault(void (*)())::buffer
                         0x20009ab0    0x80  Data  Lc  ZwSerialAPI.o [1]
 =======
                         0x20007db0    0x80  Data  Lc  ZwSerialAPI.o [1]
+=======
+                        0x200095f8    0x80  Data  Lc  ZwSerialAPI.o [1]
+>>>>>>> 5e2aab4a3d0a35c39b88b70fe95c7c2483561696
 CSerialAPI::ZW_RemoveFailedNode(unsigned char, void (*)(unsigned char))
                         0x0800550b    0x40  Code  Gb  ZwSerialAPI.o [1]
 CSerialAPI::ZW_RemoveFailedNode(unsigned char, void (*)(unsigned char))::buffer
-                        0x20007bb0    0x80  Data  Lc  ZwSerialAPI.o [1]
+                        0x200093f8    0x80  Data  Lc  ZwSerialAPI.o [1]
 CSerialAPI::ZW_RemoveNodeFromNetwork(unsigned char, void (*)(unsigned char, unsigned char, unsigned char *, unsigned char))
                         0x08005595    0x1c  Code  Gb  ZwSerialAPI.o [1]
 CSerialAPI::ZW_RemoveNodeFromNetwork(unsigned char, void (*)(unsigned char, unsigned char, unsigned char *, unsigned char))::buffer
-                        0x20007cb0    0x80  Data  Lc  ZwSerialAPI.o [1]
+                        0x200094f8    0x80  Data  Lc  ZwSerialAPI.o [1]
 CSerialAPI::ZW_ReplicationCommandComplete()
                         0x080055bd     0xe  Code  Gb  ZwSerialAPI.o [1]
 CSerialAPI::ZW_ReplicationCommandComplete()::buffer
-                        0x20007d30    0x80  Data  Lc  ZwSerialAPI.o [1]
+                        0x20009578    0x80  Data  Lc  ZwSerialAPI.o [1]
 CSerialAPI::ZW_RequestNetworkUpdate(void (*)(unsigned char))
                         0x080053f9    0x2c  Code  Gb  ZwSerialAPI.o [1]
 CSerialAPI::ZW_RequestNetworkUpdate(void (*)(unsigned char))::buffer
-                        0x20007930    0x80  Data  Lc  ZwSerialAPI.o [1]
+                        0x20009178    0x80  Data  Lc  ZwSerialAPI.o [1]
 CSerialAPI::ZW_RequestNodeInfo(unsigned char, void (*)(unsigned char))
                         0x080053b1    0x48  Code  Gb  ZwSerialAPI.o [1]
 CSerialAPI::ZW_RequestNodeInfo(unsigned char, void (*)(unsigned char))::buffer
-                        0x200078b0    0x80  Data  Lc  ZwSerialAPI.o [1]
+                        0x200090f8    0x80  Data  Lc  ZwSerialAPI.o [1]
 CSerialAPI::ZW_RequestNodeNeighborUpdate(unsigned char, void (*)(unsigned char))
                         0x08005425    0x44  Code  Gb  ZwSerialAPI.o [1]
 CSerialAPI::ZW_RequestNodeNeighborUpdate(unsigned char, void (*)(unsigned char))::buffer
-                        0x200079b0    0x80  Data  Lc  ZwSerialAPI.o [1]
+                        0x200091f8    0x80  Data  Lc  ZwSerialAPI.o [1]
 CSerialAPI::ZW_SendData(unsigned char, unsigned char *, unsigned char, unsigned char, void (*)(unsigned char, unsigned short))
                         0x08005219    0x48  Code  Gb  ZwSerialAPI.o [1]
 CSerialAPI::ZW_SendData(unsigned char, unsigned char *, unsigned char, unsigned char, void (*)(unsigned char, unsigned short))::buffer
-                        0x20007730    0x80  Data  Lc  ZwSerialAPI.o [1]
+                        0x20008f78    0x80  Data  Lc  ZwSerialAPI.o [1]
 CSerialAPI::ZW_SendNodeInformation(unsigned char, unsigned char, void (*)(unsigned char))
                         0x080051d9    0x32  Code  Gb  ZwSerialAPI.o [1]
 CSerialAPI::ZW_SendNodeInformation(unsigned char, unsigned char, void (*)(unsigned char))::buffer
-                        0x200076b0    0x80  Data  Lc  ZwSerialAPI.o [1]
+                        0x20008ef8    0x80  Data  Lc  ZwSerialAPI.o [1]
 CSerialAPI::ZW_SetDefault(void (*)())
                         0x080054b1    0x2c  Code  Gb  ZwSerialAPI.o [1]
 CSerialAPI::ZW_SetDefault(void (*)())::buffer
+<<<<<<< HEAD
                         0x20007ab0    0x80  Data  Lc  ZwSerialAPI.o [1]
 >>>>>>> 69bc07883636b953d616c007f6914e7f4f5c6363
+=======
+                        0x200092f8    0x80  Data  Lc  ZwSerialAPI.o [1]
+>>>>>>> 5e2aab4a3d0a35c39b88b70fe95c7c2483561696
 CSerialAPI::ZW_SetIdleNodeLearn(void (*)(unsigned char, unsigned char, unsigned char *, unsigned char))
                         0x08005469     0x8  Code  Gb  ZwSerialAPI.o [1]
 CSerialAPI::ZW_SetLearnMode(unsigned char, void (*)(unsigned char, unsigned char, unsigned char *, unsigned char))
                         0x08005665    0x20  Code  Gb  ZwSerialAPI.o [1]
 CSerialAPI::ZW_SetLearnMode(unsigned char, void (*)(unsigned char, unsigned char, unsigned char *, unsigned char))::buffer
+<<<<<<< HEAD
 <<<<<<< HEAD
                         0x20009e30    0x80  Data  Lc  ZwSerialAPI.o [1]
 CSerialAPI::ZW_SoftReset(unsigned char)
@@ -810,15 +939,22 @@ CSerialAPI::ZW_Version(unsigned char *)::buffer
                         0x20009eb0    0x80  Data  Lc  ZwSerialAPI.o [1]
 =======
                         0x20007e30    0x80  Data  Lc  ZwSerialAPI.o [1]
+=======
+                        0x20009678    0x80  Data  Lc  ZwSerialAPI.o [1]
+>>>>>>> 5e2aab4a3d0a35c39b88b70fe95c7c2483561696
 CSerialAPI::ZW_SoftReset(unsigned char)
                         0x080054e9     0xe  Code  Gb  ZwSerialAPI.o [1]
 CSerialAPI::ZW_SoftReset(unsigned char)::buffer
-                        0x20007b30    0x80  Data  Lc  ZwSerialAPI.o [1]
+                        0x20009378    0x80  Data  Lc  ZwSerialAPI.o [1]
 CSerialAPI::ZW_Version(unsigned char *)
                         0x08005687    0x50  Code  Gb  ZwSerialAPI.o [1]
 CSerialAPI::ZW_Version(unsigned char *)::buffer
+<<<<<<< HEAD
                         0x20007eb0    0x80  Data  Lc  ZwSerialAPI.o [1]
 >>>>>>> 69bc07883636b953d616c007f6914e7f4f5c6363
+=======
+                        0x200096f8    0x80  Data  Lc  ZwSerialAPI.o [1]
+>>>>>>> 5e2aab4a3d0a35c39b88b70fe95c7c2483561696
 CTime::GetInstance()    0x08006001     0x2  Code  Gb  timing.o [1]
 CTime::Kill(int)        0x08006007     0x2  Code  Gb  timing.o [1]
 CTime::Timeout(unsigned int, void (*)(int))
@@ -919,10 +1055,14 @@ MX_GPIO_Init            0x08007423    0xb2  Code  Lc  main.o [1]
 MemManage_Handler       0x0800b829     0x2  Code  Gb  stm32f4xx_it.o [1]
 MyNodeId                0x200000cd     0x1  Data  Gb  ZWhostApp.o [1]
 <<<<<<< HEAD
+<<<<<<< HEAD
 MySystemHomeId          0x20008f84     0x4  Data  Gb  ZWhostApp.o [1]
 =======
 MySystemHomeId          0x20006f84     0x4  Data  Gb  ZWhostApp.o [1]
 >>>>>>> 69bc07883636b953d616c007f6914e7f4f5c6363
+=======
+MySystemHomeId          0x200087cc     0x4  Data  Gb  ZWhostApp.o [1]
+>>>>>>> 5e2aab4a3d0a35c39b88b70fe95c7c2483561696
 MySystemSUCID           0x200000c5     0x1  Data  Gb  ZWhostApp.o [1]
 NMI_Handler             0x0800b825     0x2  Code  Gb  stm32f4xx_it.o [1]
 NetworkHealthComplete(unsigned char)
@@ -952,10 +1092,14 @@ NetworkManagement_ZW_SendData_Completed(unsigned char, unsigned short)
                         0x08006121    0x24  Code  Gb  networkManagement.o [1]
 PendSV_Handler          0x0800b339          Code  Gb  portasm.o [1]
 <<<<<<< HEAD
+<<<<<<< HEAD
 RecvBuffer              0x2000908c   0x100  Data  Lc  ZwSerialAPI.o [1]
 =======
 RecvBuffer              0x2000708c   0x100  Data  Lc  ZwSerialAPI.o [1]
 >>>>>>> 69bc07883636b953d616c007f6914e7f4f5c6363
+=======
+RecvBuffer              0x200088d4   0x100  Data  Lc  ZwSerialAPI.o [1]
+>>>>>>> 5e2aab4a3d0a35c39b88b70fe95c7c2483561696
 Region$$Table$$Base     0x0800b800           --   Gb  - Linker created -
 Region$$Table$$Limit    0x0800b824           --   Gb  - Linker created -
 ReloadNodeList(int)     0x08001f71   0x1de  Code  Gb  ZWhostApp.o [1]
@@ -1003,6 +1147,7 @@ TIM1_UP_TIM10_IRQHandler
                         0x0800b831     0x6  Code  Gb  stm32f4xx_it.o [1]
 TIM_Base_SetConfig      0x0800b587    0x98  Code  Gb  stm32f4xx_hal_tim.o [1]
 <<<<<<< HEAD
+<<<<<<< HEAD
 Task1Handle             0x20009670     0x4  Data  Gb  main.o [1]
 Task2Handle             0x20009674     0x4  Data  Gb  main.o [1]
 Task3Handle             0x20009678     0x4  Data  Gb  main.o [1]
@@ -1019,6 +1164,15 @@ Task6Handle             0x20007680     0x4  Data  Gb  main.o [1]
 Task7Handle             0x20007684     0x4  Data  Gb  main.o [1]
 Task8Handle             0x20007688     0x4  Data  Gb  main.o [1]
 >>>>>>> 69bc07883636b953d616c007f6914e7f4f5c6363
+=======
+Task1Handle             0x20008eb8     0x4  Data  Gb  main.o [1]
+Task2Handle             0x20008ebc     0x4  Data  Gb  main.o [1]
+Task3Handle             0x20008ec0     0x4  Data  Gb  main.o [1]
+Task5Handle             0x20008ec4     0x4  Data  Gb  main.o [1]
+Task6Handle             0x20008ec8     0x4  Data  Gb  main.o [1]
+Task7Handle             0x20008ecc     0x4  Data  Gb  main.o [1]
+Task8Handle             0x20008ed0     0x4  Data  Gb  main.o [1]
+>>>>>>> 5e2aab4a3d0a35c39b88b70fe95c7c2483561696
 TimingGetElapsedMSec(unsigned int)
                         0x08005fff     0x2  Code  Gb  timing.o [1]
 TimingStart(_sTiming *)
@@ -1035,6 +1189,7 @@ UART_WaitOnFlagUntilTimeout
 UARTgetsNonblocking(char *, unsigned int)
                         0x08003d81    0xa2  Code  Gb  ZWhostApp.o [1]
 UARTgetsNonblocking(char *, unsigned int)::bLastWasCR
+<<<<<<< HEAD
 <<<<<<< HEAD
                         0x2000962e     0x1  Data  Lc  ZWhostApp.o [1]
 Uart1_GetChar           0x08007629    0x3c  Code  Gb  main.o [1]
@@ -1055,16 +1210,20 @@ UsbResponseQueueHandle  0x200096a8     0x4  Data  Gb  main.o [1]
 UsbResponseQueueIndex   0x2000962d     0x1  Data  Lc  UsbSerialAPI.o [1]
 =======
                         0x2000762e     0x1  Data  Lc  ZWhostApp.o [1]
+=======
+                        0x20008e76     0x1  Data  Lc  ZWhostApp.o [1]
+>>>>>>> 5e2aab4a3d0a35c39b88b70fe95c7c2483561696
 Uart1_GetChar           0x08007629    0x3c  Code  Gb  main.o [1]
-Uart1_Rx_buffer         0x200083d0    0x40  Data  Gb  main.o [1]
+Uart1_Rx_buffer         0x20009bb4    0x40  Data  Gb  main.o [1]
 Uart3_GetChar           0x08007665    0x2c  Code  Gb  main.o [1]
-Uart3_Rx_buffer         0x20008220    0x20  Data  Gb  main.o [1]
-Uart4_Rx_buffer         0x20008280    0x20  Data  Gb  main.o [1]
+Uart3_Rx_buffer         0x20009a04    0x20  Data  Gb  main.o [1]
+Uart4_Rx_buffer         0x20009a64    0x20  Data  Gb  main.o [1]
 Uart5_GetChar           0x080076ad    0x2c  Code  Gb  main.o [1]
-Uart5_Rx_buffer         0x20008490    0x20  Data  Gb  main.o [1]
-Uart6_Rx_buffer         0x200084b0    0x20  Data  Gb  main.o [1]
-UpperRsp                0x200084d0    0x20  Data  Gb  ZWhostApp.o [1]
+Uart5_Rx_buffer         0x20009c74    0x20  Data  Gb  main.o [1]
+Uart6_Rx_buffer         0x20009c94    0x20  Data  Gb  main.o [1]
+UpperRsp                0x20009cb4    0x20  Data  Gb  ZWhostApp.o [1]
 UsageFault_Handler      0x0800b82d     0x2  Code  Gb  stm32f4xx_it.o [1]
+<<<<<<< HEAD
 UsbCommandQueue         0x200080f8    0x64  Data  Gb  UsbSerialAPI.o [1]
 UsbCommandQueueHandle   0x2000769c     0x4  Data  Gb  main.o [1]
 UsbQueueIndex           0x2000708b     0x1  Data  Lc  UsbSerialAPI.o [1]
@@ -1072,6 +1231,14 @@ UsbResponseQueue        0x2000815c    0x64  Data  Gb  UsbSerialAPI.o [1]
 UsbResponseQueueHandle  0x200076a8     0x4  Data  Gb  main.o [1]
 UsbResponseQueueIndex   0x2000762d     0x1  Data  Lc  UsbSerialAPI.o [1]
 >>>>>>> 69bc07883636b953d616c007f6914e7f4f5c6363
+=======
+UsbCommandQueue         0x200098dc    0x64  Data  Gb  UsbSerialAPI.o [1]
+UsbCommandQueueHandle   0x20008ee4     0x4  Data  Gb  main.o [1]
+UsbQueueIndex           0x200088d3     0x1  Data  Lc  UsbSerialAPI.o [1]
+UsbResponseQueue        0x20009940    0x64  Data  Gb  UsbSerialAPI.o [1]
+UsbResponseQueueHandle  0x20008ef0     0x4  Data  Gb  main.o [1]
+UsbResponseQueueIndex   0x20008e75     0x1  Data  Lc  UsbSerialAPI.o [1]
+>>>>>>> 5e2aab4a3d0a35c39b88b70fe95c7c2483561696
 UsbSerialApp            0x08005c39   0x15a  Code  Gb  UsbSerialAPI.o [1]
 Virtual function table for CSerialAPI
                         0x0800b8cc    0x10  Data  Gb  ZwSerialAPI.o [1]
@@ -1081,6 +1248,7 @@ Widx4                   0x20000004     0x1  Data  Gb  main.o [1]
 Widx5                   0x20000006     0x1  Data  Gb  main.o [1]
 Widx6                   0x20000008     0x1  Data  Gb  main.o [1]
 <<<<<<< HEAD
+<<<<<<< HEAD
 WifiCommandQueueHandle  0x200096a0     0x4  Data  Gb  main.o [1]
 WifiResponseQueueHandle
                         0x200096ac     0x4  Data  Gb  main.o [1]
@@ -1089,10 +1257,16 @@ WifiCommandQueueHandle  0x200076a0     0x4  Data  Gb  main.o [1]
 WifiResponseQueueHandle
                         0x200076ac     0x4  Data  Gb  main.o [1]
 >>>>>>> 69bc07883636b953d616c007f6914e7f4f5c6363
+=======
+WifiCommandQueueHandle  0x20008ee8     0x4  Data  Gb  main.o [1]
+WifiResponseQueueHandle
+                        0x20008ef4     0x4  Data  Gb  main.o [1]
+>>>>>>> 5e2aab4a3d0a35c39b88b70fe95c7c2483561696
 WifiSerialApp           0x0800b785    0x14  Code  Gb  WifiSerialAPI.o [1]
 WriteNodeTypeString(unsigned char)
                         0x08000ecd   0x118  Code  Gb  ZWhostApp.o [1]
 ZWApp_main              0x08003599   0x55e  Code  Gb  ZWhostApp.o [1]
+<<<<<<< HEAD
 <<<<<<< HEAD
 ZWUart                  0x2000952c     0x4  Data  Gb  ZwSerialAPI.o [1]
 ZWhostAppTimerHandle    0x2000968c     0x4  Data  Gb  main.o [1]
@@ -1112,6 +1286,16 @@ ZwTransmitIndex         0x20007529     0x1  Data  Lc  ZwSerialAPI.o [1]
 ZwTransmitQueue         0x20006b8c   0x220  Data  Lc  ZwSerialAPI.o [1]
 ZwTransmitQueueHandle   0x20007694     0x4  Data  Gb  main.o [1]
 >>>>>>> 69bc07883636b953d616c007f6914e7f4f5c6363
+=======
+ZWUart                  0x20008d74     0x4  Data  Gb  ZwSerialAPI.o [1]
+ZWhostAppTimerHandle    0x20008ed4     0x4  Data  Gb  main.o [1]
+ZwCommandQueue          0x20007ec8   0x50c  Data  Gb  ZwSerialAPI.o [1]
+ZwCommandQueueHandle    0x20008ed8     0x4  Data  Gb  main.o [1]
+ZwQueueIndex            0x20008d70     0x1  Data  Lc  ZwSerialAPI.o [1]
+ZwTransmitIndex         0x20008d71     0x1  Data  Lc  ZwSerialAPI.o [1]
+ZwTransmitQueue         0x200083d4   0x220  Data  Lc  ZwSerialAPI.o [1]
+ZwTransmitQueueHandle   0x20008edc     0x4  Data  Gb  main.o [1]
+>>>>>>> 5e2aab4a3d0a35c39b88b70fe95c7c2483561696
 _IsdstStr               0x20000584     0x4  Data  Gb  setlocale.o [3]
 _LitobSmallNoMb         0x08007be9    0xce  Code  Lc  xprintfsmall_nomb.o [3]
 _LocaleC_isspace        0x0800b171    0x14  Code  Gb  xlocale_c.o [3]
@@ -1135,10 +1319,14 @@ __cmain                 0x0800b87d          Code  Gb  cmain.o [6]
 __data_GetMemChunk      0x0800b21d    0x2c  Code  Gb  xgetmemchunk.o [3]
 __data_GetMemChunk::start
 <<<<<<< HEAD
+<<<<<<< HEAD
                         0x2000a528     0x4  Data  Lc  xgetmemchunk.o [3]
 =======
                         0x20008528     0x4  Data  Lc  xgetmemchunk.o [3]
 >>>>>>> 69bc07883636b953d616c007f6914e7f4f5c6363
+=======
+                        0x20009d0c     0x4  Data  Lc  xgetmemchunk.o [3]
+>>>>>>> 5e2aab4a3d0a35c39b88b70fe95c7c2483561696
 __exit                  0x0800b651    0x14  Code  Gb  exit.o [7]
 __iar_Errno             0x2000057c     0x4  Data  Gb  errno.o [3]
 __iar_Memchr            0x08008b31          Code  Gb  memchr.o [6]
@@ -1176,6 +1364,7 @@ __vector_table          0x08000000          Data  Gb  startup_stm32f446xx.o [1]
 _call_main              0x0800b889          Code  Gb  cmain.o [6]
 _exit                   0x0800b8a1          Code  Gb  cexit.o [6]
 <<<<<<< HEAD
+<<<<<<< HEAD
 _gm_                    0x20008dac   0x1d8  Data  Lc  dlmalloc.o [3]
 _main                   0x0800b893          Code  Gb  cmain.o [6]
 abListeningNodeList     0x2000918c    0xe8  Data  Gb  ZWhostApp.o [1]
@@ -1185,19 +1374,27 @@ abort                   0x0800b215     0x6  Code  Gb  abort.o [3]
 afIsNodeAFLiRS          0x20008fa0    0xe8  Data  Gb  ZWhostApp.o [1]
 =======
 _gm_                    0x20006dac   0x1d8  Data  Lc  dlmalloc.o [3]
+=======
+_gm_                    0x200085f4   0x1d8  Data  Lc  dlmalloc.o [3]
+>>>>>>> 5e2aab4a3d0a35c39b88b70fe95c7c2483561696
 _main                   0x0800b893          Code  Gb  cmain.o [6]
-abListeningNodeList     0x2000718c    0xe8  Data  Gb  ZWhostApp.o [1]
-abPingFailed            0x20007274    0xe8  Data  Gb  ZWhostApp.o [1]
+abListeningNodeList     0x200089d4    0xe8  Data  Gb  ZWhostApp.o [1]
+abPingFailed            0x20008abc    0xe8  Data  Gb  ZWhostApp.o [1]
 abPingFailedSize        0x200000c7     0x1  Data  Gb  ZWhostApp.o [1]
 abort                   0x0800b215     0x6  Code  Gb  abort.o [3]
+<<<<<<< HEAD
 afIsNodeAFLiRS          0x20006fa0    0xe8  Data  Gb  ZWhostApp.o [1]
 >>>>>>> 69bc07883636b953d616c007f6914e7f4f5c6363
+=======
+afIsNodeAFLiRS          0x200087e8    0xe8  Data  Gb  ZWhostApp.o [1]
+>>>>>>> 5e2aab4a3d0a35c39b88b70fe95c7c2483561696
 api                     0x20000104    0x10  Data  Gb  ZWhostApp.o [1]
 bAddRemoveNodeFromNetwork
                         0x200000fc     0x4  Data  Gb  ZWhostApp.o [1]
 bCharBuf                0x2000013c   0x400  Data  Gb  ZWhostApp.o [1]
 bControllerCapabilities
                         0x200000c4     0x1  Data  Gb  ZWhostApp.o [1]
+<<<<<<< HEAD
 <<<<<<< HEAD
 bDeviceCapabilities     0x20008f88     0x1  Data  Gb  ZWhostApp.o [1]
 bDutNodeID              0x20000055     0x1  Data  Gb  networkManagement.o [1]
@@ -1253,50 +1450,54 @@ cbFuncZWSetSUCNodeID    0x2000a4fc     0x4  Data  Lc  ZwSerialAPI.o [1]
 cbIdleLearnNode         0x2000a4f0     0x4  Data  Lc  ZwSerialAPI.o [1]
 =======
 bDeviceCapabilities     0x20006f88     0x1  Data  Gb  ZWhostApp.o [1]
+=======
+bDeviceCapabilities     0x200087d0     0x1  Data  Gb  ZWhostApp.o [1]
+>>>>>>> 5e2aab4a3d0a35c39b88b70fe95c7c2483561696
 bDutNodeID              0x20000055     0x1  Data  Gb  networkManagement.o [1]
 bListeningNodeListSize  0x200000c6     0x1  Data  Gb  ZWhostApp.o [1]
-bNetworkRepeaterCount   0x20006f8b     0x1  Data  Gb  ZWhostApp.o [1]
-bNodeExistMask          0x20006f8c     0x2  Data  Gb  ZWhostApp.o [1]
-bNodeExistMaskLen       0x20006f89     0x1  Data  Gb  ZWhostApp.o [1]
+bNetworkRepeaterCount   0x200087d3     0x1  Data  Gb  ZWhostApp.o [1]
+bNodeExistMask          0x200087d4     0x2  Data  Gb  ZWhostApp.o [1]
+bNodeExistMaskLen       0x200087d1     0x1  Data  Gb  ZWhostApp.o [1]
 bNodeID                 0x200000f4     0x4  Data  Gb  ZWhostApp.o [1]
 bPingNodeIndex          0x200000c8     0x1  Data  Gb  ZWhostApp.o [1]
-bSerialAPIVer           0x20007088     0x1  Data  Gb  ZWhostApp.o [1]
-canRetry                0x20007544     0x4  Data  Lc  ZwSerialAPI.o [1]
-cbFuncMemoryPutBuffer   0x2000757c     0x4  Data  Lc  ZwSerialAPI.o [1]
-cbFuncRTCTimerCreate    0x200075a0     0x4  Data  Lc  ZwSerialAPI.o [1]
+bSerialAPIVer           0x200088d0     0x1  Data  Gb  ZWhostApp.o [1]
+canRetry                0x20008d8c     0x4  Data  Lc  ZwSerialAPI.o [1]
+cbFuncMemoryPutBuffer   0x20008dc4     0x4  Data  Lc  ZwSerialAPI.o [1]
+cbFuncRTCTimerCreate    0x20008de8     0x4  Data  Lc  ZwSerialAPI.o [1]
 cbFuncZWAssignReturnRoute
-                        0x2000758c     0x4  Data  Lc  ZwSerialAPI.o [1]
+                        0x20008dd4     0x4  Data  Lc  ZwSerialAPI.o [1]
 cbFuncZWAssignSUCReturnRoute
-                        0x20007590     0x4  Data  Lc  ZwSerialAPI.o [1]
+                        0x20008dd8     0x4  Data  Lc  ZwSerialAPI.o [1]
 cbFuncZWDeleteReturnRoute
-                        0x20007598     0x4  Data  Lc  ZwSerialAPI.o [1]
+                        0x20008de0     0x4  Data  Lc  ZwSerialAPI.o [1]
 cbFuncZWDeleteSUCReturnRoute
-                        0x20007594     0x4  Data  Lc  ZwSerialAPI.o [1]
-cbFuncZWNewController   0x20007584     0x4  Data  Lc  ZwSerialAPI.o [1]
+                        0x20008ddc     0x4  Data  Lc  ZwSerialAPI.o [1]
+cbFuncZWNewController   0x20008dcc     0x4  Data  Lc  ZwSerialAPI.o [1]
 cbFuncZWRemoveFailedNode
-                        0x20008508     0x4  Data  Lc  ZwSerialAPI.o [1]
+                        0x20009cec     0x4  Data  Lc  ZwSerialAPI.o [1]
 cbFuncZWReplaceFailedNode
-                        0x20008504     0x4  Data  Lc  ZwSerialAPI.o [1]
+                        0x20009ce8     0x4  Data  Lc  ZwSerialAPI.o [1]
 cbFuncZWReplicationSendData
-                        0x20007588     0x4  Data  Lc  ZwSerialAPI.o [1]
+                        0x20008dd0     0x4  Data  Lc  ZwSerialAPI.o [1]
 cbFuncZWRequestNetworkUpdate
-                        0x200075a4     0x4  Data  Lc  ZwSerialAPI.o [1]
+                        0x20008dec     0x4  Data  Lc  ZwSerialAPI.o [1]
 cbFuncZWRequestNodeNodeNeighborUpdate
-                        0x200084f4     0x4  Data  Lc  ZwSerialAPI.o [1]
+                        0x20009cd8     0x4  Data  Lc  ZwSerialAPI.o [1]
 cbFuncZWRequestNodeNodeNeighborUpdate_Option
-                        0x200084f8     0x4  Data  Lc  ZwSerialAPI.o [1]
-cbFuncZWSendData        0x20007554     0x4  Data  Lc  ZwSerialAPI.o [1]
-cbFuncZWSendDataMR      0x20007560     0x4  Data  Lc  ZwSerialAPI.o [1]
-cbFuncZWSendDataMeta    0x20007558     0x4  Data  Lc  ZwSerialAPI.o [1]
-cbFuncZWSendDataMetaMR  0x20007564     0x4  Data  Lc  ZwSerialAPI.o [1]
+                        0x20009cdc     0x4  Data  Lc  ZwSerialAPI.o [1]
+cbFuncZWSendData        0x20008d9c     0x4  Data  Lc  ZwSerialAPI.o [1]
+cbFuncZWSendDataMR      0x20008da8     0x4  Data  Lc  ZwSerialAPI.o [1]
+cbFuncZWSendDataMeta    0x20008da0     0x4  Data  Lc  ZwSerialAPI.o [1]
+cbFuncZWSendDataMetaMR  0x20008dac     0x4  Data  Lc  ZwSerialAPI.o [1]
 cbFuncZWSendDataMeta_Bridge
-                        0x2000756c     0x4  Data  Lc  ZwSerialAPI.o [1]
-cbFuncZWSendDataMulti   0x2000755c     0x4  Data  Lc  ZwSerialAPI.o [1]
+                        0x20008db4     0x4  Data  Lc  ZwSerialAPI.o [1]
+cbFuncZWSendDataMulti   0x20008da4     0x4  Data  Lc  ZwSerialAPI.o [1]
 cbFuncZWSendDataMulti_Bridge
-                        0x20007570     0x4  Data  Lc  ZwSerialAPI.o [1]
+                        0x20008db8     0x4  Data  Lc  ZwSerialAPI.o [1]
 cbFuncZWSendData_Bridge
-                        0x20007568     0x4  Data  Lc  ZwSerialAPI.o [1]
+                        0x20008db0     0x4  Data  Lc  ZwSerialAPI.o [1]
 cbFuncZWSendNodeInformation
+<<<<<<< HEAD
                         0x20007574     0x4  Data  Lc  ZwSerialAPI.o [1]
 cbFuncZWSendSUCID       0x20008500     0x4  Data  Lc  ZwSerialAPI.o [1]
 cbFuncZWSendTestFrame   0x20007578     0x4  Data  Lc  ZwSerialAPI.o [1]
@@ -1305,6 +1506,15 @@ cbFuncZWSetLearnMode    0x2000759c     0x4  Data  Lc  ZwSerialAPI.o [1]
 cbFuncZWSetSUCNodeID    0x200084fc     0x4  Data  Lc  ZwSerialAPI.o [1]
 cbIdleLearnNode         0x200084f0     0x4  Data  Lc  ZwSerialAPI.o [1]
 >>>>>>> 69bc07883636b953d616c007f6914e7f4f5c6363
+=======
+                        0x20008dbc     0x4  Data  Lc  ZwSerialAPI.o [1]
+cbFuncZWSendSUCID       0x20009ce4     0x4  Data  Lc  ZwSerialAPI.o [1]
+cbFuncZWSendTestFrame   0x20008dc0     0x4  Data  Lc  ZwSerialAPI.o [1]
+cbFuncZWSetDefault      0x20008dc8     0x4  Data  Lc  ZwSerialAPI.o [1]
+cbFuncZWSetLearnMode    0x20008de4     0x4  Data  Lc  ZwSerialAPI.o [1]
+cbFuncZWSetSUCNodeID    0x20009ce0     0x4  Data  Lc  ZwSerialAPI.o [1]
+cbIdleLearnNode         0x20009cd4     0x4  Data  Lc  ZwSerialAPI.o [1]
+>>>>>>> 5e2aab4a3d0a35c39b88b70fe95c7c2483561696
 cbNetworkManagement_DoRediscoverSingle
                         0x20000090     0x4  Data  Gb  networkManagement.o [1]
 cbNetworkManagement_Timed_ZW_SendData
@@ -1314,10 +1524,14 @@ cbNetworkManagement_ZW_SendData
 debuglog_wr_frame       0x080045ad    0x4e  Code  Gb  ZwSerialAPI.o [1]
 digits                  0x08006830    0x28  Data  Lc  xstoul.o [3]
 <<<<<<< HEAD
+<<<<<<< HEAD
 dma_rx_buf              0x2000a1c0    0x20  Data  Gb  main.o [1]
 =======
 dma_rx_buf              0x200081c0    0x20  Data  Gb  main.o [1]
 >>>>>>> 69bc07883636b953d616c007f6914e7f4f5c6363
+=======
+dma_rx_buf              0x200099a4    0x20  Data  Gb  main.o [1]
+>>>>>>> 5e2aab4a3d0a35c39b88b70fe95c7c2483561696
 dma_uart_rx             0x2000000c     0x8  Data  Gb  main.o [1]
 exit                    0x0800b89b     0x4  Code  Gb  exit.o [3]
 fAddNodeToNetwork()     0x08002d4d    0x2c  Code  Gb  ZWhostApp.o [1]
@@ -1334,6 +1548,7 @@ fSetLearnMode()         0x08003115    0x3c  Code  Gb  ZWhostApp.o [1]
 fVersion()              0x08003255    0x3c  Code  Gb  ZWhostApp.o [1]
 fputc                   0x0800708d    0x16  Code  Gb  main.o [1]
 funcApplicationCommandHandler
+<<<<<<< HEAD
 <<<<<<< HEAD
                         0x20009548     0x4  Data  Lc  ZwSerialAPI.o [1]
 funcApplicationCommandHandler_Bridge
@@ -1352,21 +1567,29 @@ huart5                  0x2000a1e0    0x40  Data  Gb  main.o [1]
 huart6                  0x2000a2a0    0x40  Data  Gb  main.o [1]
 =======
                         0x20007548     0x4  Data  Lc  ZwSerialAPI.o [1]
+=======
+                        0x20008d90     0x4  Data  Lc  ZwSerialAPI.o [1]
+>>>>>>> 5e2aab4a3d0a35c39b88b70fe95c7c2483561696
 funcApplicationCommandHandler_Bridge
-                        0x2000754c     0x4  Data  Lc  ZwSerialAPI.o [1]
+                        0x20008d94     0x4  Data  Lc  ZwSerialAPI.o [1]
 funcCommErrorNotification
-                        0x20007550     0x4  Data  Lc  ZwSerialAPI.o [1]
+                        0x20008d98     0x4  Data  Lc  ZwSerialAPI.o [1]
 get_BTcommand           0x080057d1    0x58  Code  Gb  BtSerialAPI.o [1]
 get_USBcommand          0x08005b69    0x58  Code  Gb  UsbSerialAPI.o [1]
-hdma_usart1_rx          0x200082e0    0x60  Data  Gb  main.o [1]
-htim1                   0x20008410    0x40  Data  Gb  stm32f4xx_hal_timebase_tim.o [1]
-huart1                  0x20007630    0x40  Data  Gb  main.o [1]
-huart2                  0x20008390    0x40  Data  Gb  main.o [1]
-huart3                  0x20008240    0x40  Data  Gb  main.o [1]
+hdma_usart1_rx          0x20009ac4    0x60  Data  Gb  main.o [1]
+htim1                   0x20009bf4    0x40  Data  Gb  stm32f4xx_hal_timebase_tim.o [1]
+huart1                  0x20008e78    0x40  Data  Gb  main.o [1]
+huart2                  0x20009b74    0x40  Data  Gb  main.o [1]
+huart3                  0x20009a24    0x40  Data  Gb  main.o [1]
 huart4                  0x20000014    0x40  Data  Gb  main.o [1]
+<<<<<<< HEAD
 huart5                  0x200081e0    0x40  Data  Gb  main.o [1]
 huart6                  0x200082a0    0x40  Data  Gb  main.o [1]
 >>>>>>> 69bc07883636b953d616c007f6914e7f4f5c6363
+=======
+huart5                  0x200099c4    0x40  Data  Gb  main.o [1]
+huart6                  0x20009a84    0x40  Data  Gb  main.o [1]
+>>>>>>> 5e2aab4a3d0a35c39b88b70fe95c7c2483561696
 iSecondsBetweenEveryMaintenanceSample
                         0x20000080     0x4  Data  Gb  networkManagement.o [1]
 inHandlerMode           0x080065a1     0xc  Code  Lc  cmsis_os.o [1]
@@ -1386,6 +1609,7 @@ main                    0x080070a3   0x2d2  Code  Gb  main.o [1]
 makeFreeRtosPriority    0x08006595     0xc  Code  Lc  cmsis_os.o [1]
 memchr                  0x08008b31          Code  Gb  memchr.o [6]
 <<<<<<< HEAD
+<<<<<<< HEAD
 mparams                 0x2000a50c    0x18  Data  Lc  dlmalloc.o [3]
 ndigs                   0x08006858    0x28  Data  Lc  xstoul.o [3]
 noAckReceived           0x20009538     0x4  Data  Lc  ZwSerialAPI.o [1]
@@ -1396,14 +1620,21 @@ nodeType                0x200000d4    0x10  Data  Gb  ZWhostApp.o [1]
 obuf                    0x2000a340    0x50  Data  Lc  xfiles.o [3]
 =======
 mparams                 0x2000850c    0x18  Data  Lc  dlmalloc.o [3]
+=======
+mparams                 0x20009cf0    0x18  Data  Lc  dlmalloc.o [3]
+>>>>>>> 5e2aab4a3d0a35c39b88b70fe95c7c2483561696
 ndigs                   0x08006858    0x28  Data  Lc  xstoul.o [3]
-noAckReceived           0x20007538     0x4  Data  Lc  ZwSerialAPI.o [1]
-nodeList                0x20006f90    0x10  Data  Gb  ZWhostApp.o [1]
-nodeListSize            0x20006f8a     0x1  Data  Gb  ZWhostApp.o [1]
+noAckReceived           0x20008d80     0x4  Data  Lc  ZwSerialAPI.o [1]
+nodeList                0x200087d8    0x10  Data  Gb  ZWhostApp.o [1]
+nodeListSize            0x200087d2     0x1  Data  Gb  ZWhostApp.o [1]
 nodeStats               0x20000064     0x4  Data  Gb  networkManagement.o [1]
 nodeType                0x200000d4    0x10  Data  Gb  ZWhostApp.o [1]
+<<<<<<< HEAD
 obuf                    0x20008340    0x50  Data  Lc  xfiles.o [3]
 >>>>>>> 69bc07883636b953d616c007f6914e7f4f5c6363
+=======
+obuf                    0x20009b24    0x50  Data  Lc  xfiles.o [3]
+>>>>>>> 5e2aab4a3d0a35c39b88b70fe95c7c2483561696
 operator delete (void *)
                         0x08006ffb     0xa  Code  Gb  delop_0.o [4]
 operator new (unsigned int)
@@ -1420,10 +1651,14 @@ osTimerCreate           0x080065f3     0x4  Code  Gb  cmsis_os.o [1]
 osTimerStart            0x080065f7     0x4  Code  Gb  cmsis_os.o [1]
 osTimerStop             0x080065fb     0x4  Code  Gb  cmsis_os.o [1]
 <<<<<<< HEAD
+<<<<<<< HEAD
 pBasicBuf               0x2000a450    0x40  Data  Lc  ZWhostApp.o [1]
 =======
 pBasicBuf               0x20008450    0x40  Data  Lc  ZWhostApp.o [1]
 >>>>>>> 69bc07883636b953d616c007f6914e7f4f5c6363
+=======
+pBasicBuf               0x20009c34    0x40  Data  Lc  ZWhostApp.o [1]
+>>>>>>> 5e2aab4a3d0a35c39b88b70fe95c7c2483561696
 pGetVersionReportTimer  0x200000ec     0x4  Data  Gb  ZWhostApp.o [1]
 pSecTimer               0x20000070     0x4  Data  Gb  networkManagement.o [1]
 pTimer                  0x200000e4     0x4  Data  Gb  ZWhostApp.o [1]
@@ -1441,7 +1676,7 @@ prvIdleTask             0x0800823d    0x40  Code  Lc  tasks.o [1]
 prvInitialiseNewQueue   0x08008615    0x16  Code  Lc  queue.o [1]
 prvInitialiseNewTask    0x08007dc5    0x78  Code  Lc  tasks.o [1]
 prvInsertBlockIntoFreeList
-                        0x0800ae75    0x46  Code  Lc  heap_4.o [1]
+                        0x0800ae73    0x46  Code  Lc  heap_4.o [1]
 prvIsQueueEmpty         0x08008aed    0x16  Code  Lc  queue.o [1]
 prvResetNextTaskUnblockTime
                         0x080082a5    0x1c  Code  Lc  tasks.o [1]
@@ -1452,9 +1687,10 @@ put_BTresponse          0x0800584b    0x20  Code  Gb  BtSerialAPI.o [1]
 put_USBcommand          0x08005bc1    0x22  Code  Gb  UsbSerialAPI.o [1]
 put_USBresponse         0x08005be3    0x20  Code  Gb  UsbSerialAPI.o [1]
 putchar                 0x0800b8c1     0xc  Code  Gb  putchar.o [3]
-pvPortMalloc            0x0800ad19    0xf8  Code  Gb  heap_4.o [1]
+pvPortMalloc            0x0800ad19    0xf6  Code  Gb  heap_4.o [1]
 pvTaskIncrementMutexHeldCount
                         0x08008495    0x14  Code  Gb  tasks.o [1]
+<<<<<<< HEAD
 <<<<<<< HEAD
 pxCurrentTCB            0x20009384     0x4  Data  Gb  tasks.o [1]
 pxDelayedTaskList       0x20009388     0x4  Data  Lc  tasks.o [1]
@@ -1466,17 +1702,26 @@ pxReadyTasksLists       0x2000949c    0x8c  Data  Lc  tasks.o [1]
 =======
 pxCurrentTCB            0x20007384     0x4  Data  Gb  tasks.o [1]
 pxDelayedTaskList       0x20007388     0x4  Data  Lc  tasks.o [1]
+=======
+pxCurrentTCB            0x20008bcc     0x4  Data  Gb  tasks.o [1]
+pxDelayedTaskList       0x20008bd0     0x4  Data  Lc  tasks.o [1]
+>>>>>>> 5e2aab4a3d0a35c39b88b70fe95c7c2483561696
 pxEnd                   0x20001200     0x4  Data  Lc  heap_4.o [1]
 pxOverflowDelayedTaskList
-                        0x2000738c     0x4  Data  Lc  tasks.o [1]
+                        0x20008bd4     0x4  Data  Lc  tasks.o [1]
 pxPortInitialiseStack   0x0800af51    0x26  Code  Gb  port.o [1]
+<<<<<<< HEAD
 pxReadyTasksLists       0x2000749c    0x8c  Data  Lc  tasks.o [1]
 >>>>>>> 69bc07883636b953d616c007f6914e7f4f5c6363
+=======
+pxReadyTasksLists       0x20008ce4    0x8c  Data  Lc  tasks.o [1]
+>>>>>>> 5e2aab4a3d0a35c39b88b70fe95c7c2483561696
 report_Upper(unsigned char, unsigned char)
                         0x080001cd    0x4c  Code  Gb  ZWhostApp.o [1]
 requestUpdateOn         0x20000084     0x4  Data  Gb  networkManagement.o [1]
 response_Upper(unsigned char, unsigned char, unsigned char)
                         0x08000241    0x7e  Code  Gb  ZWhostApp.o [1]
+<<<<<<< HEAD
 <<<<<<< HEAD
 retry                   0x2000953c     0x4  Data  Lc  ZwSerialAPI.o [1]
 retryDelay              0x20009540     0x4  Data  Lc  ZwSerialAPI.o [1]
@@ -1489,23 +1734,35 @@ seqNo                   0x2000962f     0x1  Data  Lc  ZwSerialAPI.o [1]
 =======
 retry                   0x2000753c     0x4  Data  Lc  ZwSerialAPI.o [1]
 retryDelay              0x20007540     0x4  Data  Lc  ZwSerialAPI.o [1]
+=======
+retry                   0x20008d84     0x4  Data  Lc  ZwSerialAPI.o [1]
+retryDelay              0x20008d88     0x4  Data  Lc  ZwSerialAPI.o [1]
+>>>>>>> 5e2aab4a3d0a35c39b88b70fe95c7c2483561696
 sController_SerialAPI_Capabilities
                         0x20000114    0x28  Data  Gb  ZWhostApp.o [1]
-sNetworkManagementUT    0x20004e10  0x1870  Data  Gb  ZWhostApp.o [1]
+sNetworkManagementUT    0x20006658  0x1870  Data  Gb  ZWhostApp.o [1]
 sTxTiming               0x20000058     0xc  Data  Gb  networkManagement.o [1]
 segment_holding         0x08009359    0x1c  Code  Lc  dlmalloc.o [3]
+<<<<<<< HEAD
 seqNo                   0x2000762f     0x1  Data  Lc  ZwSerialAPI.o [1]
 >>>>>>> 69bc07883636b953d616c007f6914e7f4f5c6363
+=======
+seqNo                   0x20008e77     0x1  Data  Lc  ZwSerialAPI.o [1]
+>>>>>>> 5e2aab4a3d0a35c39b88b70fe95c7c2483561696
 snprintf                0x08006041    0x44  Code  Gb  snprintf.o [3]
 spCurrentSample         0x2000006c     0x4  Data  Gb  networkManagement.o [1]
 spNetworkManagement     0x20000068     0x4  Data  Gb  networkManagement.o [1]
 std::_NomemoryNothrow()
                         0x0800b211     0x4  Code  Gb  nomemory.o [4]
 <<<<<<< HEAD
+<<<<<<< HEAD
 std::__iar_New_hand     0x2000a524     0x4  Data  Gb  new.o [4]
 =======
 std::__iar_New_hand     0x20008524     0x4  Data  Gb  new.o [4]
 >>>>>>> 69bc07883636b953d616c007f6914e7f4f5c6363
+=======
+std::__iar_New_hand     0x20009d08     0x4  Data  Gb  new.o [4]
+>>>>>>> 5e2aab4a3d0a35c39b88b70fe95c7c2483561696
 strchr                  0x0800ad01          Code  Gb  strchr.o [6]
 strlen                  0x08006009          Code  Gb  strlen.o [6]
 sys_alloc               0x0800974d   0x388  Code  Lc  dlmalloc.o [3]
@@ -1516,25 +1773,34 @@ testStarted             0x20000100     0x4  Data  Gb  ZWhostApp.o [1]
 timerGetVersionReportH  0x200000f0     0x4  Data  Gb  ZWhostApp.o [1]
 timerH                  0x200000e8     0x4  Data  Gb  ZWhostApp.o [1]
 <<<<<<< HEAD
+<<<<<<< HEAD
 timerRTCArray           0x200093fc    0xa0  Data  Lc  ZwSerialAPI.o [1]
 =======
 timerRTCArray           0x200073fc    0xa0  Data  Lc  ZwSerialAPI.o [1]
 >>>>>>> 69bc07883636b953d616c007f6914e7f4f5c6363
+=======
+timerRTCArray           0x20008c44    0xa0  Data  Lc  ZwSerialAPI.o [1]
+>>>>>>> 5e2aab4a3d0a35c39b88b70fe95c7c2483561696
 timerSecH               0x20000074     0x4  Data  Gb  networkManagement.o [1]
 tmalloc_large           0x08009ae1   0x380  Code  Lc  dlmalloc.o [3]
 tmalloc_small           0x08009e61   0x206  Code  Lc  dlmalloc.o [3]
 tolower                 0x08008b1d    0x14  Code  Gb  tolower.o [3]
 <<<<<<< HEAD
+<<<<<<< HEAD
 ucHeap                  0x20001210  0x5c00  Data  Lc  heap_4.o [1]
 =======
 ucHeap                  0x20001210  0x3c00  Data  Lc  heap_4.o [1]
 >>>>>>> 69bc07883636b953d616c007f6914e7f4f5c6363
+=======
+ucHeap                  0x20001210  0x53e4  Data  Lc  heap_4.o [1]
+>>>>>>> 5e2aab4a3d0a35c39b88b70fe95c7c2483561696
 ucMaxSysCallPriority    0x200000a4     0x1  Data  Lc  port.o [1]
 ulMaxPRIGROUPValue      0x200000ac     0x4  Data  Lc  port.o [1]
 uwTick                  0x200000b4     0x4  Data  Gb  stm32f4xx_hal.o [1]
 uwTickFreq              0x200000b0     0x1  Data  Gb  stm32f4xx_hal.o [1]
 uwTickPrio              0x200000b8     0x4  Data  Gb  stm32f4xx_hal.o [1]
 uxCriticalNesting       0x200000a8     0x4  Data  Lc  port.o [1]
+<<<<<<< HEAD
 <<<<<<< HEAD
 uxCurrentNumberOfTasks  0x200093a8     0x4  Data  Lc  tasks.o [1]
 uxDeletedTasksWaitingCleanUp
@@ -1546,14 +1812,24 @@ uxTaskNumber            0x200093c4     0x4  Data  Lc  tasks.o [1]
 uxTopReadyPriority      0x200093b0     0x4  Data  Lc  tasks.o [1]
 =======
 uxCurrentNumberOfTasks  0x200073a8     0x4  Data  Lc  tasks.o [1]
+=======
+uxCurrentNumberOfTasks  0x20008bf0     0x4  Data  Lc  tasks.o [1]
+>>>>>>> 5e2aab4a3d0a35c39b88b70fe95c7c2483561696
 uxDeletedTasksWaitingCleanUp
-                        0x20007390     0x4  Data  Lc  tasks.o [1]
+                        0x20008bd8     0x4  Data  Lc  tasks.o [1]
 uxListRemove            0x0800af2b    0x26  Code  Gb  list.o [1]
+<<<<<<< HEAD
 uxPendedTicks           0x200073b8     0x4  Data  Lc  tasks.o [1]
 uxSchedulerSuspended    0x200073cc     0x4  Data  Lc  tasks.o [1]
 uxTaskNumber            0x200073c4     0x4  Data  Lc  tasks.o [1]
 uxTopReadyPriority      0x200073b0     0x4  Data  Lc  tasks.o [1]
 >>>>>>> 69bc07883636b953d616c007f6914e7f4f5c6363
+=======
+uxPendedTicks           0x20008c00     0x4  Data  Lc  tasks.o [1]
+uxSchedulerSuspended    0x20008c14     0x4  Data  Lc  tasks.o [1]
+uxTaskNumber            0x20008c0c     0x4  Data  Lc  tasks.o [1]
+uxTopReadyPriority      0x20008bf8     0x4  Data  Lc  tasks.o [1]
+>>>>>>> 5e2aab4a3d0a35c39b88b70fe95c7c2483561696
 vListInitialise         0x0800aec1    0x1a  Code  Gb  list.o [1]
 vListInitialiseItem     0x0800aedb     0x6  Code  Gb  list.o [1]
 vListInsert             0x0800aef9    0x32  Code  Gb  list.o [1]
@@ -1561,7 +1837,7 @@ vListInsertEnd          0x0800aee1    0x18  Code  Gb  list.o [1]
 vPortEnableVFP          0x0800b3cd          Code  Gb  portasm.o [1]
 vPortEnterCritical      0x0800b047    0x32  Code  Gb  port.o [1]
 vPortExitCritical       0x0800b079    0x24  Code  Gb  port.o [1]
-vPortFree               0x0800ae23    0x44  Code  Gb  heap_4.o [1]
+vPortFree               0x0800ae21    0x44  Code  Gb  heap_4.o [1]
 vPortSetupTimerInterrupt
                         0x0800b131    0x28  Code  Wk  port.o [1]
 vPortStartFirstTask     0x0800b3ad          Code  Gb  portasm.o [1]
@@ -1578,6 +1854,7 @@ vTaskStartScheduler     0x08007f21    0x56  Code  Gb  tasks.o [1]
 vTaskSuspendAll         0x08007f77     0xc  Code  Gb  tasks.o [1]
 vTaskSwitchContext      0x080080ef    0x52  Code  Gb  tasks.o [1]
 <<<<<<< HEAD
+<<<<<<< HEAD
 waitForAck              0x20009530     0x4  Data  Lc  ZwSerialAPI.o [1]
 waitForResponse         0x20009534     0x4  Data  Lc  ZwSerialAPI.o [1]
 xBlockAllocatedBit      0x2000120c     0x4  Data  Lc  heap_4.o [1]
@@ -1593,17 +1870,27 @@ xPendingReadyList       0x2000935c    0x14  Data  Lc  tasks.o [1]
 =======
 waitForAck              0x20007530     0x4  Data  Lc  ZwSerialAPI.o [1]
 waitForResponse         0x20007534     0x4  Data  Lc  ZwSerialAPI.o [1]
+=======
+waitForAck              0x20008d78     0x4  Data  Lc  ZwSerialAPI.o [1]
+waitForResponse         0x20008d7c     0x4  Data  Lc  ZwSerialAPI.o [1]
+>>>>>>> 5e2aab4a3d0a35c39b88b70fe95c7c2483561696
 xBlockAllocatedBit      0x2000120c     0x4  Data  Lc  heap_4.o [1]
-xDelayedTaskList1       0x200073d0    0x14  Data  Lc  tasks.o [1]
-xDelayedTaskList2       0x200073e4    0x14  Data  Lc  tasks.o [1]
+xDelayedTaskList1       0x20008c18    0x14  Data  Lc  tasks.o [1]
+xDelayedTaskList2       0x20008c2c    0x14  Data  Lc  tasks.o [1]
 xFreeBytesRemaining     0x20001204     0x4  Data  Lc  heap_4.o [1]
-xIdleTaskHandle         0x200073f8     0x4  Data  Lc  tasks.o [1]
+xIdleTaskHandle         0x20008c40     0x4  Data  Lc  tasks.o [1]
 xMinimumEverFreeBytesRemaining
                         0x20001208     0x4  Data  Lc  heap_4.o [1]
+<<<<<<< HEAD
 xNextTaskUnblockTime    0x200073c8     0x4  Data  Lc  tasks.o [1]
 xNumOfOverflows         0x200073c0     0x4  Data  Lc  tasks.o [1]
 xPendingReadyList       0x2000735c    0x14  Data  Lc  tasks.o [1]
 >>>>>>> 69bc07883636b953d616c007f6914e7f4f5c6363
+=======
+xNextTaskUnblockTime    0x20008c10     0x4  Data  Lc  tasks.o [1]
+xNumOfOverflows         0x20008c08     0x4  Data  Lc  tasks.o [1]
+xPendingReadyList       0x20008ba4    0x14  Data  Lc  tasks.o [1]
+>>>>>>> 5e2aab4a3d0a35c39b88b70fe95c7c2483561696
 xPortStartScheduler     0x0800afa1    0xa6  Code  Gb  port.o [1]
 xQueueGenericCreate     0x080085dd    0x38  Code  Gb  queue.o [1]
 xQueueGenericReset      0x08008565    0x78  Code  Gb  queue.o [1]
@@ -1611,6 +1898,7 @@ xQueueGenericSend       0x0800862b   0x116  Code  Gb  queue.o [1]
 xQueueGiveFromISR       0x08008753    0x84  Code  Gb  queue.o [1]
 xQueueReceiveFromISR    0x0800895d    0x7c  Code  Gb  queue.o [1]
 xQueueSemaphoreTake     0x080087d7   0x13c  Code  Gb  queue.o [1]
+<<<<<<< HEAD
 <<<<<<< HEAD
 xSchedulerRunning       0x200093b4     0x4  Data  Lc  tasks.o [1]
 xStart                  0x200011f8     0x8  Data  Lc  heap_4.o [1]
@@ -1620,6 +1908,11 @@ xSchedulerRunning       0x200073b4     0x4  Data  Lc  tasks.o [1]
 xStart                  0x200011f8     0x8  Data  Lc  heap_4.o [1]
 xSuspendedTaskList      0x20007394    0x14  Data  Lc  tasks.o [1]
 >>>>>>> 69bc07883636b953d616c007f6914e7f4f5c6363
+=======
+xSchedulerRunning       0x20008bfc     0x4  Data  Lc  tasks.o [1]
+xStart                  0x200011f8     0x8  Data  Lc  heap_4.o [1]
+xSuspendedTaskList      0x20008bdc    0x14  Data  Lc  tasks.o [1]
+>>>>>>> 5e2aab4a3d0a35c39b88b70fe95c7c2483561696
 xTaskCheckForTimeOut    0x080081d5    0x5a  Code  Gb  tasks.o [1]
 xTaskCreate             0x08007d6d    0x58  Code  Gb  tasks.o [1]
 xTaskGetSchedulerState  0x080082c1    0x18  Code  Gb  tasks.o [1]
@@ -1632,6 +1925,7 @@ xTaskRemoveFromEventList
 xTaskResumeAll          0x08007f83    0x8c  Code  Gb  tasks.o [1]
 xTasksWaitingTermination
 <<<<<<< HEAD
+<<<<<<< HEAD
                         0x20009370    0x14  Data  Lc  tasks.o [1]
 xTickCount              0x200093ac     0x4  Data  Lc  tasks.o [1]
 xYieldPending           0x200093bc     0x4  Data  Lc  tasks.o [1]
@@ -1640,6 +1934,11 @@ xYieldPending           0x200093bc     0x4  Data  Lc  tasks.o [1]
 xTickCount              0x200073ac     0x4  Data  Lc  tasks.o [1]
 xYieldPending           0x200073bc     0x4  Data  Lc  tasks.o [1]
 >>>>>>> 69bc07883636b953d616c007f6914e7f4f5c6363
+=======
+                        0x20008bb8    0x14  Data  Lc  tasks.o [1]
+xTickCount              0x20008bf4     0x4  Data  Lc  tasks.o [1]
+xYieldPending           0x20008c04     0x4  Data  Lc  tasks.o [1]
+>>>>>>> 5e2aab4a3d0a35c39b88b70fe95c7c2483561696
 
 
 [1] = C:\Users\seungwoo\Documents\SHACS_F446RE\EWARM\SHACS_F446RE\Obj
@@ -1653,10 +1952,14 @@ xYieldPending           0x200073bc     0x4  Data  Lc  tasks.o [1]
   47 577 bytes of readonly  code memory
      211 bytes of readonly  data memory
 <<<<<<< HEAD
+<<<<<<< HEAD
   42 280 bytes of readwrite data memory
 =======
   34 088 bytes of readwrite data memory
 >>>>>>> 69bc07883636b953d616c007f6914e7f4f5c6363
+=======
+  40 204 bytes of readwrite data memory
+>>>>>>> 5e2aab4a3d0a35c39b88b70fe95c7c2483561696
 
 Errors: none
 Warnings: none

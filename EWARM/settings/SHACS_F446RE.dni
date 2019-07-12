@@ -15,10 +15,14 @@ stlinkserialNo=67133741
 stlinkfoundProbes=
 [DebugChecksum]
 <<<<<<< HEAD
+<<<<<<< HEAD
 Checksum=-848548
 =======
 Checksum=-1882979647
 >>>>>>> 69bc07883636b953d616c007f6914e7f4f5c6363
+=======
+Checksum=1133148685
+>>>>>>> 5e2aab4a3d0a35c39b88b70fe95c7c2483561696
 [Exceptions]
 StopOnUncaught=_ 0
 StopOnThrow=_ 0
@@ -27,7 +31,7 @@ Enabled=_ 0
 [CallStack]
 ShowArgs=0
 [Disassembly]
-MixedMode=1
+MixedMode=0
 [SWOTraceHWSettings]
 OverrideDefaultClocks=0
 CpuClock=180000000
@@ -88,17 +92,33 @@ SumSortOrder=0
 [Disassemble mode]
 mode=0
 [Breakpoints2]
+<<<<<<< HEAD
 Count=0
+=======
+Bp0=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\Middlewares\Third_Party\ZWHostApp\ZWhostApp.cpp}.2206.5" 0 0 1 "" 0 "" 0
+Bp1=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\Middlewares\Third_Party\BTSerialApp\BtSerialAPI.c}.125.5" 0 0 1 "" 0 "" 0
+Bp2=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\Middlewares\Third_Party\USBSerialApp\UsbSerialAPI.c}.119.5" 0 0 1 "" 0 "" 0
+Bp3=_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\Src\main.c}.334.5" 0 0 1 "" 0 "" 0
+Count=4
+>>>>>>> 5e2aab4a3d0a35c39b88b70fe95c7c2483561696
 [Log file]
 LoggingEnabled=_ 0
 LogFile=_ ""
 Category=_ 0
+<<<<<<< HEAD
 [TermIOLog]
 LoggingEnabled=_ 0
 LogFile=_ ""
 [Aliases]
 Count=0
 SuppressDialog=0
+=======
+[Aliases]
+A0=_ "C:\Users\klsw7\Documents\SHACS_F446RE\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c" "C:\Users\seungwoo\Documents\SHACS_F446RE\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c"
+A1=_ "C:\Users\klsw7\Documents\SHACS_F446RE\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c" "C:\Users\seungwoo\Documents\SHACS_F446RE\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c"
+Count=2
+SuppressDialog=1
+>>>>>>> 5e2aab4a3d0a35c39b88b70fe95c7c2483561696
 [DriverProfiling]
 Enabled=0
 Mode=3
@@ -109,6 +129,7 @@ Exclusions=
 Enabled=0
 [CallStackStripe]
 ShowTiming=1
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 [Disassemble mode]
@@ -124,3 +145,8 @@ A1=_ "C:\Users\klsw7\Documents\SHACS_F446RE\Drivers\STM32F4xx_HAL_Driver\Src\stm
 Count=2
 SuppressDialog=1
 >>>>>>> 69bc07883636b953d616c007f6914e7f4f5c6363
+=======
+[TermIOLog]
+LoggingEnabled=_ 0
+LogFile=_ ""
+>>>>>>> 5e2aab4a3d0a35c39b88b70fe95c7c2483561696
