@@ -25,7 +25,7 @@ if not "%~1" == "" goto debugFile
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.5\common\bin\cspybat" -f "C:\Users\klsw7\Documents\SHACS_F446RE\EWARM\settings\SHACS_F446RE.SHACS_F446RE.general.xcl" --backend -f "C:\Users\klsw7\Documents\SHACS_F446RE\EWARM\settings\SHACS_F446RE.SHACS_F446RE.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.5\common\bin\cspybat" -f "C:\Users\seungwoo\Documents\SHACS_F446RE\EWARM\settings\SHACS_F446RE.SHACS_F446RE.general.xcl" --backend -f "C:\Users\seungwoo\Documents\SHACS_F446RE\EWARM\settings\SHACS_F446RE.SHACS_F446RE.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.5\common\bin\cspybat" -f "C:\Users\klsw7\Documents\SHACS_F446RE\EWARM\settings\SHACS_F446RE.SHACS_F446RE.general.xcl" "--debug_file=%~1" --backend -f "C:\Users\klsw7\Documents\SHACS_F446RE\EWARM\settings\SHACS_F446RE.SHACS_F446RE.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.5\common\bin\cspybat" -f "C:\Users\seungwoo\Documents\SHACS_F446RE\EWARM\settings\SHACS_F446RE.SHACS_F446RE.general.xcl" "--debug_file=%~1" --backend -f "C:\Users\seungwoo\Documents\SHACS_F446RE\EWARM\settings\SHACS_F446RE.SHACS_F446RE.driver.xcl" 
 
 @echo off 
 :end

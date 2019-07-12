@@ -319,7 +319,6 @@ int main(void)
     osThreadDef(Task3, APIProcTask, osPriorityHigh, 0, 1024);
     Task3Handle = osThreadCreate(osThread(Task3), NULL);
 
-
     osThreadDef(Task5, BtSerialApp, osPriorityBelowNormal, 0, 512);
     Task5Handle = osThreadCreate(osThread(Task5), NULL);
 
