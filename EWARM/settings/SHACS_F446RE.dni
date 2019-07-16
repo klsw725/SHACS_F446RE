@@ -89,36 +89,9 @@ ShowTimeLog=1
 SumEnabled=0
 ShowTimeSum=1
 SumSortOrder=0
-[Disassemble mode]
-mode=0
-[Breakpoints2]
-<<<<<<< HEAD
-Count=0
-=======
-Bp0=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\Middlewares\Third_Party\ZWHostApp\ZWhostApp.cpp}.2206.5" 0 0 1 "" 0 "" 0
-Bp1=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\Middlewares\Third_Party\BTSerialApp\BtSerialAPI.c}.125.5" 0 0 1 "" 0 "" 0
-Bp2=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\Middlewares\Third_Party\USBSerialApp\UsbSerialAPI.c}.119.5" 0 0 1 "" 0 "" 0
-Bp3=_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\Src\main.c}.334.5" 0 0 1 "" 0 "" 0
-Count=4
->>>>>>> 5e2aab4a3d0a35c39b88b70fe95c7c2483561696
-[Log file]
-LoggingEnabled=_ 0
-LogFile=_ ""
-Category=_ 0
-<<<<<<< HEAD
 [TermIOLog]
 LoggingEnabled=_ 0
 LogFile=_ ""
-[Aliases]
-Count=0
-SuppressDialog=0
-=======
-[Aliases]
-A0=_ "C:\Users\klsw7\Documents\SHACS_F446RE\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c" "C:\Users\seungwoo\Documents\SHACS_F446RE\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c"
-A1=_ "C:\Users\klsw7\Documents\SHACS_F446RE\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c" "C:\Users\seungwoo\Documents\SHACS_F446RE\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c"
-Count=2
-SuppressDialog=1
->>>>>>> 5e2aab4a3d0a35c39b88b70fe95c7c2483561696
 [DriverProfiling]
 Enabled=0
 Mode=3
@@ -132,21 +105,22 @@ ShowTiming=1
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
-[Disassemble mode]
-mode=0
-[Breakpoints2]
-Bp0=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\Middlewares\Third_Party\ZWHostApp\ZWhostApp.cpp}.2206.5" 0 0 1 "" 0 "" 0
-Bp1=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\Middlewares\Third_Party\BTSerialApp\BtSerialAPI.c}.125.5" 0 0 1 "" 0 "" 0
-Bp2=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\Middlewares\Third_Party\USBSerialApp\UsbSerialAPI.c}.119.5" 0 0 1 "" 0 "" 0
-Count=3
 [Aliases]
 A0=_ "C:\Users\klsw7\Documents\SHACS_F446RE\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c" "C:\Users\seungwoo\Documents\SHACS_F446RE\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c"
 A1=_ "C:\Users\klsw7\Documents\SHACS_F446RE\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c" "C:\Users\seungwoo\Documents\SHACS_F446RE\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c"
-Count=2
-SuppressDialog=1
+Count=0
+SuppressDialog=0
 >>>>>>> 69bc07883636b953d616c007f6914e7f4f5c6363
 =======
 [TermIOLog]
 LoggingEnabled=_ 0
 LogFile=_ ""
 >>>>>>> 5e2aab4a3d0a35c39b88b70fe95c7c2483561696
+[Log file]
+LoggingEnabled=_ 0
+LogFile=_ ""
+Category=_ 0
+[Disassemble mode]
+mode=0
+[Breakpoints2]
+Count=0

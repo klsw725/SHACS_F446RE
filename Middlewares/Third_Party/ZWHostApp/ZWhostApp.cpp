@@ -41,6 +41,7 @@
 #include "cmsis_os.h"
 #include "BtSerial.h"
 #include "UsbSerial.h"
+#include "WifiSerial.h"
 
 #define	sprintf_s	snprintf
 #define	printf_s	printf
@@ -2335,7 +2336,61 @@ void ZWApp_main(void const * argument)
 
 
 				}
-            	else if (get_USBcommand(UpperCmd, &UpperLen) != 0)
+            	else if (get_WIFIcommand(UpperCmd, &UpperLen) != 0)
+				{
+            		printf("Get USB Cmd\r\n");
+            		printf("Len=%d [%02X] [%02X] [%02X]\r\n", UpperLen, UpperCmd[0], UpperCmd[2], UpperCmd[3]);
+              		switch (UpperCmd[2] )
+                		{
+                		case	2:
+                			ch = 'I';
+                			break;
+                		case	 3:		//Node On/Off
+                			bNodeID = UpperCmd[3];
+                			Control_Data = UpperCmd[4];
+                			printf("Cmd=%d, NodeId = %d SetVal = %d\r\n", UpperCmd[3], bNodeID, Control_Data);
+                    		ch = '*';
+                    		break;
+                		case	 4:		//Add Node
+                			bNodeID = UpperCmd[3];
+                			Control_Data = UpperCmd[4];
+                			printf("Cmd=%d, Add node\r\n", UpperCmd[1]);
+                    		ch = 'A';
+                    		break;
+                		case	 5:		//Query Stats
+                			bNodeID = UpperCmd[3];
+                			printf("Cmd=%d, Query Node[%d] status\r\n", UpperCmd[2], bNodeID);
+                			break;
+                		case	6:		//Reset Default
+
+                			printf("Cmd=%d, Reset to Default\r\n", UpperCmd[2]);
+                    		ch = 'D';
+                    		break;
+                		case	 7:		//Query Stats
+                			printf("Cmd=%d, Set OTG\r\n", UpperCmd[2]);
+            				if (UpperCmd[3] == 0)
+            				{
+            					printf("\r\nUsb OTG Disable\r\n");
+
+            					HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, (GPIO_PinState)GPIO_PIN_RESET);
+            					HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, (GPIO_PinState)GPIO_PIN_SET);
+            				}
+            				else
+            				{
+            					printf("\r\nUsb OTG Enable\r\n");
+
+            					HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, (GPIO_PinState)GPIO_PIN_SET);
+            					HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, (GPIO_PinState)GPIO_PIN_RESET);
+            				}
+                    		Control_from = 2;
+            				response_Upper(0x07, 0x01, 00);
+                			break;
+
+                		}
+            		Control_from = 2;
+
+				}
+                            	else if (get_USBcommand(UpperCmd, &UpperLen) != 0)
 				{
             		printf("Get USB Cmd\r\n");
             		printf("Len=%d [%02X] [%02X] [%02X]\r\n", UpperLen, UpperCmd[0], UpperCmd[2], UpperCmd[3]);
