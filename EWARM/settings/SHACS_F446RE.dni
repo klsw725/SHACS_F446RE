@@ -16,7 +16,7 @@ stlinkfoundProbes=
 [DebugChecksum]
 <<<<<<< HEAD
 <<<<<<< HEAD
-Checksum=-848548
+Checksum=-333696252
 =======
 Checksum=-1882979647
 >>>>>>> 69bc07883636b953d616c007f6914e7f4f5c6363
@@ -89,9 +89,21 @@ ShowTimeLog=1
 SumEnabled=0
 ShowTimeSum=1
 SumSortOrder=0
+[Disassemble mode]
+mode=0
+[Breakpoints2]
+Count=0
+[Log file]
+LoggingEnabled=_ 0
+LogFile=_ ""
+Category=_ 0
 [TermIOLog]
 LoggingEnabled=_ 0
 LogFile=_ ""
+[Aliases]
+A0=_ "C:\Users\klsw7\Documents\SHACS_F446RE\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c" "C:\Users\seungwoo\Documents\SHACS_F446RE\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c"
+Count=1
+SuppressDialog=1
 [DriverProfiling]
 Enabled=0
 Mode=3
@@ -102,25 +114,3 @@ Exclusions=
 Enabled=0
 [CallStackStripe]
 ShowTiming=1
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-[Aliases]
-A0=_ "C:\Users\klsw7\Documents\SHACS_F446RE\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c" "C:\Users\seungwoo\Documents\SHACS_F446RE\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c"
-A1=_ "C:\Users\klsw7\Documents\SHACS_F446RE\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c" "C:\Users\seungwoo\Documents\SHACS_F446RE\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c"
-Count=0
-SuppressDialog=0
->>>>>>> 69bc07883636b953d616c007f6914e7f4f5c6363
-=======
-[TermIOLog]
-LoggingEnabled=_ 0
-LogFile=_ ""
->>>>>>> 5e2aab4a3d0a35c39b88b70fe95c7c2483561696
-[Log file]
-LoggingEnabled=_ 0
-LogFile=_ ""
-Category=_ 0
-[Disassemble mode]
-mode=0
-[Breakpoints2]
-Count=0

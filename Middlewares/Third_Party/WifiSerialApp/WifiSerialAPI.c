@@ -125,7 +125,7 @@ void WifiSerialApp(void const *argument)
     printf("\r\nWIfiSerialApp Start\r\n");
 
 
-    while(1){osDelay(1000);}
+//    while(1){osDelay(1000);}
 
 	HAL_UART_Receive_IT(&huart4,&ch,1);
 
