@@ -723,58 +723,96 @@ static void MX_GPIO_Init(void)
  *  - DMA Rx Complete event when previous event was DMA Rx Complete --> entire buffer holds new data
  *  - DMA Rx Complete event when previous event was Timeout event   --> buffer entirely filled but contains old data, new data is from (MAX-previousCNDTR) till MAX
  * Remarks:
- *  - If there is no following data after DMA Rx Complete, the generated IDLE Timeout has to be ignored!
- *  - When buffer overflow occurs, the following has to be performed in order not to lose data:
- *      (1): DMA Rx Complete event occurs, process first part of new data till buffer MAX.
- *      (2): In this case, the currentCNDTR is already decreased because of overflow.
- *              However, previousCNDTR has to be set to MAX in order to signal for upcoming Timeout event that new data has to be processed from buffer beginning.
- *      (3): When many overflows occur, simply process DMA Rx Complete events (process entire DMA buffer) until Timeout event occurs.
- *      (4): When there is no more overflow, Timeout event occurs, process last part of data from buffer beginning till currentCNDTR.
+*  - If there is no following data after DMA Rx Complete, the generated IDLE Timeout has to be ignored!
+*  - When buffer overflow occurs, the following has to be performed in order not to lose data:
+*      (1): DMA Rx Complete event occurs, process first part of new data till buffer MAX.
+*      (2): In this case, the currentCNDTR is already decreased because of overflow.
+*              However, previousCNDTR has to be set to MAX in order to signal for upcoming Timeout event that new data has to be processed from buffer beginning.
+*      (3): When many overflows occur, simply process DMA Rx Complete events (process entire DMA buffer) until Timeout event occurs.
+*      (4): When there is no more overflow, Timeout event occurs, process last part of data from buffer beginning till currentCNDTR.
 */
 
-void DMA_Uart1(UART_HandleTypeDef *huart)
+void DMA_Uart1(DMA_HandleTypeDef *huart)
 {
-    uint16_t i, pos, start, length;
-    uint16_t currCNDTR = __HAL_DMA_GET_COUNTER(huart->hdmarx);
-
-	if (huart->Instance == USART1)
-	{
-
-		/* Ignore IDLE Timeout when the received characters exactly filled up the DMA buffer and DMA Rx Complete IT is generated, but there is no new character during timeout */
-		if(dma_uart_rx.flag && currCNDTR == DMA_BUF_SIZE)
-		{
-			dma_uart_rx.flag = 0;
-			return;
-		}
-
-		/* Determine start position in DMA buffer based on previous CNDTR value */
-		start = (dma_uart_rx.prevCNDTR < DMA_BUF_SIZE) ? (DMA_BUF_SIZE - dma_uart_rx.prevCNDTR) : 0;
-
-		if(dma_uart_rx.flag)    /* Timeout event */
-		{
-			/* Determine new data length based on previous DMA_CNDTR value:
-			 *  If previous CNDTR is less than DMA buffer size: there is old data in DMA buffer (from previous timeout) that has to be ignored.
-			 *  If CNDTR == DMA buffer size: entire buffer content is new and has to be processed.
-			 */
-			length = (dma_uart_rx.prevCNDTR < DMA_BUF_SIZE) ? (dma_uart_rx.prevCNDTR - currCNDTR) : (DMA_BUF_SIZE - currCNDTR);
-			dma_uart_rx.prevCNDTR = currCNDTR;
-			dma_uart_rx.flag = 0;
-		}
-		else                /* DMA Rx Complete event */
-		{
-			length = DMA_BUF_SIZE - start;
-			dma_uart_rx.prevCNDTR = DMA_BUF_SIZE;
-		}
-
-		/* Copy and Process new data */
-		for(i=0,pos=start; i<length; ++i,++pos)
-		{
-			Uart1_Rx_buffer[Widx1] = dma_rx_buf[pos];
-			Widx1++;
-			Widx1 = Widx1 % UART1_RX_BUF_SIZE;
-		}
-	}
+  //    uint16_t i, pos, start, length;
+  //    uint16_t currCNDTR = __HAL_DMA_GET_COUNTER(huart->hdmarx);
+  //
+  //	if (huart->Instance == USART1)
+  //	{
+  //
+  //		/* Ignore IDLE Timeout when the received characters exactly filled up the DMA buffer and DMA Rx Complete IT is generated, but there is no new character during timeout */
+  //		if(dma_uart_rx.flag && currCNDTR == DMA_BUF_SIZE)
+  //		{
+  //			dma_uart_rx.flag = 0;
+  //			return;
+  //		}
+  //
+  //		/* Determine start position in DMA buffer based on previous CNDTR value */
+  //		start = (dma_uart_rx.prevCNDTR < DMA_BUF_SIZE) ? (DMA_BUF_SIZE - dma_uart_rx.prevCNDTR) : 0;
+  //
+  //		if(dma_uart_rx.flag)    /* Timeout event */
+  //		{
+  //			/* Determine new data length based on previous DMA_CNDTR value:
+  //			 *  If previous CNDTR is less than DMA buffer size: there is old data in DMA buffer (from previous timeout) that has to be ignored.
+  //			 *  If CNDTR == DMA buffer size: entire buffer content is new and has to be processed.
+  //			 */
+  //			length = (dma_uart_rx.prevCNDTR < DMA_BUF_SIZE) ? (dma_uart_rx.prevCNDTR - currCNDTR) : (DMA_BUF_SIZE - currCNDTR);
+  //			dma_uart_rx.prevCNDTR = currCNDTR;
+  //			dma_uart_rx.flag = 0;
+  //		}
+  //		else                /* DMA Rx Complete event */
+  //		{
+  //			length = DMA_BUF_SIZE - start;
+  //			dma_uart_rx.prevCNDTR = DMA_BUF_SIZE;
+  //		}
+  //
+  //		/* Copy and Process new data */
+  //		for(i=0,pos=start; i<length; ++i,++pos)
+  //		{
+  //			Uart1_Rx_buffer[Widx1] = dma_rx_buf[pos];
+  //			Widx1++;
+  //			Widx1 = Widx1 % UART1_RX_BUF_SIZE;
+  //		}
+  //	}
+  uint16_t i, pos, start, length;
+  uint16_t currCNDTR = __HAL_DMA_GET_COUNTER(huart);
+  
+  /* Ignore IDLE Timeout when the received characters exactly filled up the DMA buffer and DMA Rx Complete IT is generated, but there is no new character during timeout */
+  if(dma_uart_rx.flag && currCNDTR == DMA_BUF_SIZE)
+  {
+    dma_uart_rx.flag = 0;
+    return;
+  }
+  
+  /* Determine start position in DMA buffer based on previous CNDTR value */
+  start = (dma_uart_rx.prevCNDTR < DMA_BUF_SIZE) ? (DMA_BUF_SIZE - dma_uart_rx.prevCNDTR) : 0;
+  
+  if(dma_uart_rx.flag)    /* Timeout event */
+  {
+    /* Determine new data length based on previous DMA_CNDTR value:
+    *  If previous CNDTR is less than DMA buffer size: there is old data in DMA buffer (from previous timeout) that has to be ignored.
+    *  If CNDTR == DMA buffer size: entire buffer content is new and has to be processed.
+    */
+    length = (dma_uart_rx.prevCNDTR < DMA_BUF_SIZE) ? (dma_uart_rx.prevCNDTR - currCNDTR) : (DMA_BUF_SIZE - currCNDTR);
+    dma_uart_rx.prevCNDTR = currCNDTR;
+    dma_uart_rx.flag = 0;
+  }
+  else                /* DMA Rx Complete event */
+  {
+    length = DMA_BUF_SIZE - start;
+    dma_uart_rx.prevCNDTR = DMA_BUF_SIZE;
+  }
+  
+  /* Copy and Process new data */
+  for(i=0,pos=start; i<length; ++i,++pos)
+  {
+    Uart1_Rx_buffer[Widx1] = dma_rx_buf[pos];
+    Widx1++;
+    Widx1 = Widx1 % UART1_RX_BUF_SIZE;
+  }
+  HAL_UART_Receive_DMA(&huart1, (uint8_t*)dma_rx_buf, DMA_BUF_SIZE);
 }
+
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
 	char	ch;
@@ -784,6 +822,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 
 	if (huart->Instance == USART1)
 	{
+          printf("RxCpltCallback here");
 	    currCNDTR = __HAL_DMA_GET_COUNTER(huart->hdmarx);
 		/* Ignore IDLE Timeout when the received characters exactly filled up the DMA buffer and DMA Rx Complete IT is generated, but there is no new character during timeout */
 		if(dma_uart_rx.flag && currCNDTR == DMA_BUF_SIZE)
