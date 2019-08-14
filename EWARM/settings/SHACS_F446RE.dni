@@ -1,3 +1,15 @@
+[StLinkDriver]
+stlinkserialNo=67125053
+stlinkfoundProbes=
+CStepIntDis=_ 0
+LeaveTargetRunning=_ 0
+[DebugChecksum]
+Checksum=1699422444
+[Exceptions]
+StopOnUncaught=_ 0
+StopOnThrow=_ 0
+[CodeCoverage]
+Enabled=_ 0
 [Stack]
 FillEnabled=0
 OverflowWarningsEnabled=1
@@ -8,30 +20,10 @@ UseTrigger=1
 TriggerName=main
 LimitSize=0
 ByteLimit=50
-[StLinkDriver]
-CStepIntDis=_ 0
-LeaveTargetRunning=_ 0
-stlinkserialNo=67125053
-stlinkfoundProbes=
-[DebugChecksum]
-<<<<<<< HEAD
-<<<<<<< HEAD
-Checksum=-875869975
-=======
-Checksum=-1882979647
->>>>>>> 69bc07883636b953d616c007f6914e7f4f5c6363
-=======
-Checksum=1133148685
->>>>>>> 5e2aab4a3d0a35c39b88b70fe95c7c2483561696
-[Exceptions]
-StopOnUncaught=_ 0
-StopOnThrow=_ 0
-[CodeCoverage]
-Enabled=_ 0
 [CallStack]
 ShowArgs=0
 [Disassembly]
-MixedMode=0
+MixedMode=1
 [SWOTraceHWSettings]
 OverrideDefaultClocks=0
 CpuClock=180000000
@@ -109,9 +101,8 @@ ShowTiming=1
 [Disassemble mode]
 mode=0
 [Breakpoints2]
-Bp0=_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\Src\stm32f4xx_it.c}.171.3" 0 0 1 "" 0 "" 0
+Bp0=_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\Src\main.c}.539.3" 0 0 1 "" 0 "" 0
 Count=1
 [Aliases]
-A0=_ "C:\Users\klsw7\Documents\SHACS_F446RE\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c" "C:\Users\seungwoo\Documents\SHACS_F446RE\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c"
-Count=1
-SuppressDialog=1
+Count=0
+SuppressDialog=0
