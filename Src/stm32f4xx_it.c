@@ -175,7 +175,7 @@ void SysTick_Handler(void)
   {
       /* DMA Timeout event: set Timeout Flag and call DMA Rx Complete Callback */
       dma_uart_rx.flag = 1;
-      hdma_usart1_rx.XferCpltCallback = DMA_Uart1;
+      hdma_usart1_rx.XferCpltCallback(&hdma_usart1_rx);
   }
   if(dma_uart_rx.timer) { --dma_uart_rx.timer; }
 

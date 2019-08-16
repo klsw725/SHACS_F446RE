@@ -11,12 +11,12 @@ ByteLimit=50
 [StLinkDriver]
 CStepIntDis=_ 0
 LeaveTargetRunning=_ 0
-stlinkserialNo=67125053
+stlinkserialNo=67133741
 stlinkfoundProbes=
 [DebugChecksum]
 <<<<<<< HEAD
 <<<<<<< HEAD
-Checksum=-62350442
+Checksum=-953616011
 =======
 Checksum=-1882979647
 >>>>>>> 69bc07883636b953d616c007f6914e7f4f5c6363
@@ -109,8 +109,7 @@ ShowTiming=1
 [Disassemble mode]
 mode=0
 [Breakpoints2]
-Bp0=_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\Src\stm32f4xx_it.c}.215.3" 0 0 1 "" 0 "" 0
-Count=1
+Count=0
 [Aliases]
 A0=_ "C:\Users\klsw7\Documents\SHACS_F446RE\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c" "C:\Users\seungwoo\Documents\SHACS_F446RE\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c"
 Count=1

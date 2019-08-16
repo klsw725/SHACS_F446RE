@@ -224,6 +224,7 @@ int main(void)
 #endif
   __HAL_UART_ENABLE_IT(&huart5, UART_IT_RXNE);
   __HAL_UART_ENABLE_IT(&huart6, UART_IT_RXNE);
+//  __HAL_UART_ENABLE_IT(&huart1, UART_IT_IDLE);
   /* USER CODE END 2 */
 
   /* USER CODE BEGIN RTOS_MUTEX */
@@ -822,7 +823,6 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 
 	if (huart->Instance == USART1)
 	{
-          printf("RxCpltCallback here");
 	    currCNDTR = __HAL_DMA_GET_COUNTER(huart->hdmarx);
 		/* Ignore IDLE Timeout when the received characters exactly filled up the DMA buffer and DMA Rx Complete IT is generated, but there is no new character during timeout */
 		if(dma_uart_rx.flag && currCNDTR == DMA_BUF_SIZE)
