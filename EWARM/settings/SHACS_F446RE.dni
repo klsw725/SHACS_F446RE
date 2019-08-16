@@ -1,15 +1,3 @@
-[StLinkDriver]
-stlinkserialNo=67125053
-stlinkfoundProbes=
-CStepIntDis=_ 0
-LeaveTargetRunning=_ 0
-[DebugChecksum]
-Checksum=1699422444
-[Exceptions]
-StopOnUncaught=_ 0
-StopOnThrow=_ 0
-[CodeCoverage]
-Enabled=_ 0
 [Stack]
 FillEnabled=0
 OverflowWarningsEnabled=1
@@ -20,6 +8,18 @@ UseTrigger=1
 TriggerName=main
 LimitSize=0
 ByteLimit=50
+[StLinkDriver]
+CStepIntDis=_ 0
+LeaveTargetRunning=_ 0
+stlinkserialNo=67133741
+stlinkfoundProbes=
+[DebugChecksum]
+Checksum=-851147859
+[Exceptions]
+StopOnUncaught=_ 0
+StopOnThrow=_ 0
+[CodeCoverage]
+Enabled=_ 0
 [CallStack]
 ShowArgs=0
 [Disassembly]
@@ -101,7 +101,7 @@ ShowTiming=1
 [Disassemble mode]
 mode=0
 [Breakpoints2]
-Bp0=_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\Src\main.c}.539.3" 0 0 1 "" 0 "" 0
+Bp0=_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\Src\stm32f4xx_it.c}.244.3" 0 0 1 "" 0 "" 0
 Count=1
 [Aliases]
 Count=0
